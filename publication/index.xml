@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication-rsses on  </title>
+    <link>http://alicanb.github.io/publication/index.xml</link>
+    <description>Recent content in Publication-rsses on  </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Alican Bozkurt</copyright>
+    <lastBuildDate>Fri, 12 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</title>
+      <link>http://alicanb.github.io/publication/SRT-SC/</link>
+      <pubDate>Fri, 12 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/SRT-SC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</title>
+      <link>http://alicanb.github.io/publication/ophthalmology-plus/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/ophthalmology-plus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Classifying fonts and calligraphy styles using complex wavelet transform</title>
+      <link>http://alicanb.github.io/publication/SIVP-fonts/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/SIVP-fonts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-scale directional-filtering-based method for follicular lymphoma grading</title>
+      <link>http://alicanb.github.io/publication/SIVP-FL/</link>
+      <pubDate>Thu, 07 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/SIVP-FL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projections onto convex sets (POCS) based optimization by lifting</title>
+      <link>http://alicanb.github.io/publication/GlobalSIP-POCS/</link>
+      <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/GlobalSIP-POCS/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
