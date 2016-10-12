@@ -21,10 +21,19 @@
     
     <item>
       <title>Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</title>
-      <link>http://alicanb.github.io/publication/ophthalmology-plus/</link>
+      <link>http://alicanb.github.io/publication/ophthalmology-ROP/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://alicanb.github.io/publication/ophthalmology-plus/</guid>
+      <guid>http://alicanb.github.io/publication/ophthalmology-ROP/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</title>
+      <link>http://alicanb.github.io/publication/TVST-ROP/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/TVST-ROP/</guid>
       <description></description>
     </item>
     
@@ -43,6 +52,15 @@
       <pubDate>Thu, 07 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>http://alicanb.github.io/publication/SIVP-FL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deconvolution using projections onto the epigraph set of a convex cost function</title>
+      <link>http://alicanb.github.io/publication/SIU-POCS_Deconvolution/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/SIU-POCS_Deconvolution/</guid>
       <description></description>
     </item>
     
