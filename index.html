@@ -31,7 +31,7 @@
   <title> </title>
 
 </head>
-<body id="top">
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
@@ -49,16 +49,28 @@
     </div>
 
     
-    <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+    <div class="collapse navbar-collapse">
 
       
       <ul class="nav navbar-nav navbar-right">
         
-        <li class="nav-item"><a href="/#top">Home</a></li>
+        <li class="nav-item">
+          <a href="/#top" data-target="#top">
+            Home
+          </a>
+        </li>
         
-        <li class="nav-item"><a href="/#publications">Publications</a></li>
+        <li class="nav-item">
+          <a href="/#publications" data-target="#publications">
+            Publications
+          </a>
+        </li>
         
-        <li class="nav-item"><a href="/#contact">Contact</a></li>
+        <li class="nav-item">
+          <a href="/#contact" data-target="#contact">
+            Contact
+          </a>
+        </li>
         
       </ul>
 
@@ -72,144 +84,134 @@
 
 
 
-
   
   
-  
+  <section id="about" class="home-section">
+    <div class="container">
+      
 
 
 
-<section id="bio" class="home-section">
-  <div class="container">
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <div class="col-xs-12 col-md-4">
+    <div id="profile">
 
-    <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <div class="col-xs-12 col-md-4">
-        <div id="profile">
+      
+      <div class="portrait" itemprop="image"
+           style="background-image: url('/img/portrait.jpg');">
+      </div>
+      
 
-          
-          <div class="portrait" itemprop="image"
-               style="background-image: url('/img/portrait.jpg');">
-          </div>
-          
-
-          <div class="portrait-title">
-            <h2 itemprop="name">Alican Bozkurt</h2>
-            <h3 itemprop="jobTitle">PhD Student</h3>
-            <h3 itemprop="worksFor">Northeastern University</h3>
-          </div>
-
-          <ul class="social-icon" aria-hidden="true">
-            
-            
-            <li>
-              <a href="mailto:alican@ece.neu.edu">
-                <i class="fa fa-envelope big-icon"></i>
-              </a>
-            </li>
-            
-            
-            <li>
-              <a href="https://scholar.google.co.uk/citations?user=HadTR2kAAAAJ">
-                <i class="ai ai-google-scholar big-icon"></i>
-              </a>
-            </li>
-            
-            
-            <li>
-              <a href="//github.com/alicanb">
-                <i class="fa fa-github big-icon"></i>
-              </a>
-            </li>
-            
-          </ul>
-
-        </div>
+      <div class="portrait-title">
+        <h2 itemprop="name">Alican Bozkurt</h2>
+        <h3 itemprop="jobTitle">PhD Student</h3>
+        <h3 itemprop="worksFor">Northeastern University</h3>
       </div>
 
-      <div class="visible-sm visible-xs"></div>
-
-      <div class="col-xs-12 col-md-8" itemprop="description">
-
+      <ul class="social-icon" aria-hidden="true">
         
+        
+        <li>
+          <a href="mailto:alican@ece.neu.edu">
+            <i class="fa fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="https://scholar.google.co.uk/citations?user=HadTR2kAAAAJ">
+            <i class="ai ai-google-scholar big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="//github.com/alicanb">
+            <i class="fa fa-github big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-8" itemprop="description">
+
+    
 
 <h1 id="biography">Biography</h1>
 
 <p>Alican Bozkurt is a Ph.D. student under supervision of <a href="http://www.ece.neu.edu/people/dy-jennifer">Jennifer Dy</a> and <a href="http://www.ece.neu.edu/people/brooks-dana">Dana Brooks</a>, at Northeastern University. His main research interests are machine learning with emphasis on Bayesian nonparametric models, deep networks, and their applications in biomedical image processing.</p>
 
 
-        <div class="row">
-
-          
-          <div class="col-sm-5">
-            <h3>Interests</h3>
-            <ul class="ul-interests">
-              
-              <li>Bayesian Nonparametric Models</li>
-              
-              <li>Deep Learning</li>
-              
-              <li>Biomedical Image Processing</li>
-              
-            </ul>
-          </div>
-          
-
-          
-          <div class="col-sm-7">
-            <h3>Education</h3>
-            <ul class="ul-edu fa-ul">
-              
-              <li>
-                <i class="fa-li fa fa-graduation-cap"></i>
-                <div class="description">
-                  <p class="course">MSc in Image Processing, 2013</p>
-                  <p class="institution">Bilkent University</p>
-                </div>
-              </li>
-              
-              <li>
-                <i class="fa-li fa fa-graduation-cap"></i>
-                <div class="description">
-                  <p class="course">BSc in Electrical &amp; Electronics Engineering, 2011</p>
-                  <p class="institution">Bilkent University</p>
-                </div>
-              </li>
-              
-            </ul>
-          </div>
-          
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-  
-  
-  
-
-
-
-
-
-<section id="publications" class="home-section">
-  <div class="container">
-
     <div class="row">
-      <div class="col-xs-12 col-md-4 section-heading">
-        <h1>Selected Publications</h1>
-        
-      </div>
-      <div class="col-xs-12 col-md-8">
-        
 
-        
-        
-        <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <div class="col-sm-5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">
+          
+          <li>Bayesian Nonparametric Models</li>
+          
+          <li>Deep Learning</li>
+          
+          <li>Biomedical Image Processing</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-sm-7">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fa fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">MSc in Image Processing, 2013</p>
+              <p class="institution">Bilkent University</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fa fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BSc in Electrical &amp; Electronics Engineering, 2011</p>
+              <p class="institution">Bilkent University</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="publications_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Selected Publications</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    
+    
+    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
   <div class="row">
 
     
@@ -272,41 +274,37 @@
   </div>
 </div>
 
-        
-        
-      </div>
-    </div>
+    
+    
 
   </div>
-</section>
+</div>
 
-
+    </div>
+  </section>
 
   
   
-  
+  <section id="publications" class="home-section">
+    <div class="container">
+      
 
 
 
 
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Recent Publications</h1>
+    
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
 
-
-<section class="home-section">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-xs-12 col-md-4 section-heading">
-        <h1>Recent Publications</h1>
-        
-        
-      </div>
-      <div class="col-xs-12 col-md-8">
-        
-
-        
-        <ul class="fa-ul">
-          
-          <li itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <ul class="fa-ul">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="name">Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</span>
   <p>
@@ -331,8 +329,8 @@
 </p>
 </li>
 
-          
-          <li itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="name">Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</span>
   <p>
@@ -357,8 +355,8 @@
 </p>
 </li>
 
-          
-          <li itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="name">Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</span>
   <p>
@@ -383,8 +381,8 @@
 </p>
 </li>
 
-          
-          <li itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="name">Classifying fonts and calligraphy styles using complex wavelet transform</span>
   <p>
@@ -417,8 +415,8 @@
 </p>
 </li>
 
-          
-          <li itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="name">Multi-scale directional-filtering-based method for follicular lymphoma grading</span>
   <p>
@@ -435,6 +433,10 @@
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.slideshare.net/alicanb/multi-scale-directional-filtering-based-method-for-follicular-lymphoma-grading">
+  Slides
+</a>
+
 
 
 
@@ -443,8 +445,8 @@
 </p>
 </li>
 
-          
-          <li itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="name">Deconvolution using projections onto the epigraph set of a convex cost function</span>
   <p>
@@ -469,8 +471,8 @@
 </p>
 </li>
 
-          
-          <li itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="name">Projections onto convex sets (POCS) based optimization by lifting</span>
   <p>
@@ -495,68 +497,65 @@
 </p>
 </li>
 
-          
-        </ul>
-        
-      </div>
-    </div>
+      
+    </ul>
+    
 
   </div>
-</section>
+</div>
 
-
-
-  
-  
-  
-
-
-
-
-<section id="contact" class="home-section">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-xs-12 col-md-4 section-heading">
-        <h1>Contact</h1>
-        
-      </div>
-      <div class="col-xs-12 col-md-8">
-        
-
-        <ul class="fa-ul">
-
-          
-          <li>
-            <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-            <span><a href="mailto:alican@ece.neu.edu">alican@ece.neu.edu</a></span>
-          </li>
-          
-
-          
-
-          
-          <li>
-            <i class="fa-li fa fa-phone fa-2x" aria-hidden="true"></i>
-            <span><a href="tel:888%20888%2088%2088">888 888 88 88</a></span>
-          </li>
-          
-
-          
-          <li>
-            <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
-            <span>140 Fenway R306, Boston MA, 90210, USA.</span>
-          </li>
-          
-
-        </ul>
-
-      </div>
     </div>
+  </section>
+
+  
+  
+  <section id="contact" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    <ul class="fa-ul">
+
+      
+      <li>
+        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+        <span><a href="mailto:alican@ece.neu.edu">alican@ece.neu.edu</a></span>
+      </li>
+      
+
+      
+
+      
+      <li>
+        <i class="fa-li fa fa-phone fa-2x" aria-hidden="true"></i>
+        <span><a href="tel:888%20888%2088%2088">888 888 88 88</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span>140 Fenway R306, Boston MA, 90210, USA.</span>
+      </li>
+      
+
+    </ul>
 
   </div>
-</section>
+</div>
 
+    </div>
+  </section>
 
 
 
@@ -585,6 +584,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
     <script src="/js/jquery-1.12.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
     <script src="/js/hugo-academic.js"></script>
     
 
