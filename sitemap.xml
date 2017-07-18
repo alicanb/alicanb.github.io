@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/SPIE-Mosaic/</loc>
+    
+      <loc>http://alicanb.github.io/publication/cvmi-dej/</loc>
+      <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://alicanb.github.io/publication/spie-mosaic/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -12,7 +22,8 @@
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/SRT-SC/</loc>
+    
+      <loc>http://alicanb.github.io/publication/srt-sc/</loc>
       <lastmod>2016-08-12T00:00:00+00:00</lastmod>
     </url>
     
@@ -20,7 +31,8 @@
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/ophthalmology-ROP/</loc>
+    
+      <loc>http://alicanb.github.io/publication/ophthalmology-rop/</loc>
       <lastmod>2016-06-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -28,7 +40,8 @@
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/TVST-ROP/</loc>
+    
+      <loc>http://alicanb.github.io/publication/tvst-rop/</loc>
       <lastmod>2015-11-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -36,7 +49,8 @@
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/SIVP-fonts/</loc>
+    
+      <loc>http://alicanb.github.io/publication/sivp-fonts/</loc>
       <lastmod>2015-07-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -44,7 +58,8 @@
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/SIVP-FL/</loc>
+    
+      <loc>http://alicanb.github.io/publication/sivp-fl/</loc>
       <lastmod>2014-08-07T00:00:00+00:00</lastmod>
     </url>
     
@@ -52,7 +67,8 @@
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/SIU-POCS_Deconvolution/</loc>
+    
+      <loc>http://alicanb.github.io/publication/siu-pocs_deconvolution/</loc>
       <lastmod>2014-06-12T00:00:00+00:00</lastmod>
     </url>
     
@@ -60,7 +76,8 @@
     
     
     <url>
-      <loc>http://alicanb.github.io/publication/GlobalSIP-POCS/</loc>
+    
+      <loc>http://alicanb.github.io/publication/globalsip-pocs/</loc>
       <lastmod>2014-02-13T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,6 +85,7 @@
     
     
     <url>
+    
       <loc>http://alicanb.github.io/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -77,8 +95,36 @@
     
     
     <url>
+    
+      <loc>http://alicanb.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://alicanb.github.io/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://alicanb.github.io/publication/</loc>
-      <lastmod>2017-01-28T00:00:00+00:00</lastmod>
+      <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://alicanb.github.io/tags/</loc>
       <priority>0</priority>
     </url>
     
