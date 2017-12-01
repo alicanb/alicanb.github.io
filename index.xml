@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>  on  </title>
+    <title>Alican Bozkurt on Alican Bozkurt</title>
     <link>http://alicanb.github.io/</link>
-    <description>Recent content in   on  </description>
+    <description>Recent content in Alican Bozkurt on Alican Bozkurt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016 Alican Bozkurt</copyright>
+    <copyright>&amp;copy; 2017 Alican Bozkurt</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
@@ -39,10 +39,10 @@
     
     <item>
       <title>Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</title>
-      <link>http://alicanb.github.io/publication/ophthalmology-rop/</link>
+      <link>http://alicanb.github.io/publication/opthalmology-rop/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://alicanb.github.io/publication/ophthalmology-rop/</guid>
+      <guid>http://alicanb.github.io/publication/opthalmology-rop/</guid>
       <description></description>
     </item>
     
@@ -75,10 +75,10 @@
     
     <item>
       <title>Deconvolution using projections onto the epigraph set of a convex cost function</title>
-      <link>http://alicanb.github.io/publication/siu-pocs_deconvolution/</link>
+      <link>http://alicanb.github.io/publication/siu-pocs-deconvolution/</link>
       <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://alicanb.github.io/publication/siu-pocs_deconvolution/</guid>
+      <guid>http://alicanb.github.io/publication/siu-pocs-deconvolution/</guid>
       <description></description>
     </item>
     
