@@ -11,6 +11,15 @@
     <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
+      <link>http://alicanb.github.io/publication/osa-munet/</link>
+      <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/osa-munet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images With Recurrent Convolutional Networks</title>
       <link>http://alicanb.github.io/publication/cvmi-dej/</link>
       <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
