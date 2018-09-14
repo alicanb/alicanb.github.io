@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Alican Bozkurt</copyright>
-    <lastBuildDate>Fri, 12 Aug 2016 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 12 Aug 2016 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://alicanb.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</title>
       <link>http://alicanb.github.io/publication/srt-sc/</link>
-      <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+      <pubDate>Fri, 12 Aug 2016 00:00:00 +0200</pubDate>
       
       <guid>http://alicanb.github.io/publication/srt-sc/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</title>
       <link>http://alicanb.github.io/publication/opthalmology-rop/</link>
-      <pubDate>Wed, 01 Jun 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0200</pubDate>
       
       <guid>http://alicanb.github.io/publication/opthalmology-rop/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</title>
       <link>http://alicanb.github.io/publication/tvst-rop/</link>
-      <pubDate>Sun, 01 Nov 2015 00:00:00 -0700</pubDate>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0100</pubDate>
       
       <guid>http://alicanb.github.io/publication/tvst-rop/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>Classifying fonts and calligraphy styles using complex wavelet transform</title>
       <link>http://alicanb.github.io/publication/sivp-fonts/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0200</pubDate>
       
       <guid>http://alicanb.github.io/publication/sivp-fonts/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>Multi-scale directional-filtering-based method for follicular lymphoma grading</title>
       <link>http://alicanb.github.io/publication/sivp-fl/</link>
-      <pubDate>Thu, 07 Aug 2014 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 07 Aug 2014 00:00:00 +0200</pubDate>
       
       <guid>http://alicanb.github.io/publication/sivp-fl/</guid>
       <description></description>
