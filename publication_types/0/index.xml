@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Alican Bozkurt</copyright>
-    <lastBuildDate>Thu, 23 Aug 2018 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 23 Aug 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://alicanb.github.io/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</title>
       <link>http://alicanb.github.io/publication/miccai-munet/</link>
-      <pubDate>Thu, 23 Aug 2018 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/publication/miccai-munet/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
       <link>http://alicanb.github.io/publication/osa-munet/</link>
-      <pubDate>Fri, 06 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 06 Apr 2018 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/publication/osa-munet/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images With Recurrent Convolutional Networks</title>
       <link>http://alicanb.github.io/publication/cvmi-dej/</link>
-      <pubDate>Fri, 21 Jul 2017 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/publication/cvmi-dej/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</title>
       <link>http://alicanb.github.io/publication/spie-mosaic/</link>
-      <pubDate>Sat, 28 Jan 2017 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>http://alicanb.github.io/publication/spie-mosaic/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>Deconvolution using projections onto the epigraph set of a convex cost function</title>
       <link>http://alicanb.github.io/publication/siu-pocs-deconvolution/</link>
-      <pubDate>Thu, 12 Jun 2014 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/publication/siu-pocs-deconvolution/</guid>
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>Projections onto convex sets (POCS) based optimization by lifting</title>
       <link>http://alicanb.github.io/publication/globalsip-pocs/</link>
-      <pubDate>Thu, 13 Feb 2014 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 13 Feb 2014 00:00:00 -0500</pubDate>
       
       <guid>http://alicanb.github.io/publication/globalsip-pocs/</guid>
       <description></description>

@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 2.4.0">
-  <meta name="generator" content="Hugo 0.48" />
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.51" />
   <meta name="author" content="Alican Bozkurt">
 
   
@@ -26,9 +26,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
   
   
-  <meta name="theme-color" content="#0095eb">
+  
+  <meta name="theme-color" content="#2962ff">
   
 
   
@@ -38,7 +48,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
     
@@ -65,7 +75,7 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -100,17 +110,23 @@
 
   <link rel="canonical" href="http://alicanb.github.io/publication/miccai-munet/">
 
+  
+  
+  
+  
+    
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Alican Bozkurt">
   <meta property="og:url" content="http://alicanb.github.io/publication/miccai-munet/">
   <meta property="og:title" content="A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin | Alican Bozkurt">
-  <meta property="og:description" content="We describe a new multiresolution &#39;nested encoder-decoder&#39; convolutional network architecture and use it to annotate morphological patterns in reflectance confocal microscopy (RCM) images of human skin for aiding cancer diagnosis. Skin cancers are the most common types of cancers, melanoma being the deadliest among them. RCM is an effective, non-invasive pre-screening tool for skin cancer diagnosis, with the required cellular resolution. However, images are complex, low-contrast, and highly variable, so that clinicians require months to years of expert-level training to be able to make accurate assessments. In this paper, we address classifying 4 key clinically important structural/textural patterns in RCM images. The occurrence and morphology of these patterns are used by clinicians for diagnosis of melanomas. The large size of RCM images, the large variance of pattern size, the large-scale range over which patterns appear, the class imbalance in collected images, and the lack of fully-labeled images all make this a challenging problem to address, even with automated machine learning tools. We designed a novel nested U-net architecture to cope with these challenges, and a selective loss function to handle partial labeling. Trained and tested on 56 melanoma-suspicious, partially labeled, 12k x 12k pixel images, our network automatically annotated diagnostic patterns with high sensitivity and specificity, providing consistent labels for unlabeled sections of the test images. Providing such annotation will aid clinicians in achieving diagnostic accuracy, and perhaps more important, dramatically facilitate clinical training, thus enabling much more rapid adoption of RCM into widespread clinical use process. In addition, our adaptation of U-net architecture provides an intrinsically multiresolution deep network that may be useful in other challenging biomedical image analysis applications. *First two authors share first authorship.*"><meta property="og:image" content="http://alicanb.github.io/img/banners/munet.png">
+  <meta property="og:description" content="We describe a new multiresolution &#39;nested encoder-decoder&#39; convolutional network architecture and use it to annotate morphological patterns in reflectance confocal microscopy (RCM) images of human skin for aiding cancer diagnosis. Skin cancers are the most common types of cancers, melanoma being the deadliest among them. RCM is an effective, non-invasive pre-screening tool for skin cancer diagnosis, with the required cellular resolution. However, images are complex, low-contrast, and highly variable, so that clinicians require months to years of expert-level training to be able to make accurate assessments. In this paper, we address classifying 4 key clinically important structural/textural patterns in RCM images. The occurrence and morphology of these patterns are used by clinicians for diagnosis of melanomas. The large size of RCM images, the large variance of pattern size, the large-scale range over which patterns appear, the class imbalance in collected images, and the lack of fully-labeled images all make this a challenging problem to address, even with automated machine learning tools. We designed a novel nested U-net architecture to cope with these challenges, and a selective loss function to handle partial labeling. Trained and tested on 56 melanoma-suspicious, partially labeled, 12k x 12k pixel images, our network automatically annotated diagnostic patterns with high sensitivity and specificity, providing consistent labels for unlabeled sections of the test images. Providing such annotation will aid clinicians in achieving diagnostic accuracy, and perhaps more important, dramatically facilitate clinical training, thus enabling much more rapid adoption of RCM into widespread clinical use process. In addition, our adaptation of U-net architecture provides an intrinsically multiresolution deep network that may be useful in other challenging biomedical image analysis applications. *First two authors share first authorship.*"><meta property="og:image" content="http://alicanb.github.io/publication/miccai-munet/featured.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-08-23T00:00:00&#43;02:00">
+  <meta property="article:published_time" content="2018-08-23T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2018-09-18T18:02:58&#43;02:00">
+  <meta property="article:modified_time" content="2018-12-04T17:52:24-05:00">
   
 
   
@@ -121,6 +137,37 @@
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
@@ -170,7 +217,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/publication">
+          <a class="nav-link" href="/publication/">
             
             <span>Publications</span>
             
@@ -199,32 +246,20 @@
         
         
 
-        
-
-        
-        
-        
-          
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="https://drive.google.com/open?id=0B9xKeFS4aancSXhOeElXV1dhZWM" target="_blank" rel="noopener">
-            
-            <span>CV</span>
-            
-          </a>
-        </li>
-
-        
-        
-
       
 
         
 
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+
       </ul>
 
     </div>
@@ -234,10 +269,19 @@
 <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
+
+
+
+
+
+
+
+
+
 <div class="article-header">
   
   
-    <img src="/img/banners/munet.png" class="article-banner" itemprop="image">
+  <img src="/img/banners/munet.png" class="article-banner" itemprop="image" alt="">
   
 
   
@@ -245,15 +289,73 @@
 
 
 
-  <div class="article-container">
-    <h1 itemprop="name">A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</h1>
-    <span class="pub-authors" itemprop="author">
-      
-      A. Bozkurt, K. Kose, C. Alessi-Fox, M. Gill, D. H. Brooks, J. G. Dy, M. Rajadhyaksha
-      
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">A. Bozkurt</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">K. Kose</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">C. Alessi-Fox</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">M. Gill</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">D. H. Brooks</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">J. G. Dy</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">M. Rajadhyaksha</span>
     </span>
-    <span class="float-right">
-      
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+        Last updated on
+    
+    <meta content="2018-08-23 00:00:00 -0400 EDT" itemprop="datePublished">
+    <time datetime="2018-12-04 17:52:24 -0500 EST" itemprop="dateModified">
+      Dec 4, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Alican Bozkurt">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
@@ -294,9 +396,93 @@
 </div>
 
 
-    </span>
+  
+
+</div>
 
     
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1802.02213v2" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://link.springer.com/chapter/10.1007/978-3-030-00934-2_33" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/publication/miccai-munet/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://drive.google.com/open?id=1wtbiFOOqYRFFNjmbhDcKh8D-qvgYqZ0I" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
 
     
     <h3>Abstract</h3>
@@ -351,63 +537,22 @@
     </div>
     <div class="d-sm-none space-below"></div>
 
-    <div class="row" style="padding-top: 10px">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading" style="line-height:34px;">Links</div>
-          <div class="col-12 col-md-9">
-
-            
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1802.02213v2" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://link.springer.com/chapter/10.1007/978-3-030-00934-2_33" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/files/citations/miccai-munet.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://drive.google.com/open?id=1wtbiFOOqYRFFNjmbhDcKh8D-qvgYqZ0I" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-
-
-
-
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-sm-none space-below"></div>
-
     <div class="space-below"></div>
 
     <div class="article-style"></div>
 
     
+
+
+
+
+    
+
+
+
+  
+
+
 
 
 
@@ -473,14 +618,8 @@
 
     
     
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        CommonHTML: { linebreaks: { automatic: true } },
-        tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
-        TeX: { noUndefined: { attributes: { mathcolor: 'red', mathbackground: '#FFEEEE', mathsize: '90%' } } },
-        messageStyle: 'none'
-      });
-    </script>
+    
+    <script src="/js/mathjax-config.js"></script>
     
 
     
@@ -504,9 +643,6 @@
       
     
 
-    <script src="/js/hugo-academic.js"></script>
-    
-
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
@@ -527,7 +663,7 @@
       const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
-        'results': "Search Results",
+        'results': "results found",
         'no_results': "No results found"
       };
       const content_type = {
@@ -561,10 +697,21 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/search.js"></script>
     
 
     
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
     
 
   </body>
