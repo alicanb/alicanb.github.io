@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>E. Ataer-Cansizoglu on Alican Bozkurt</title>
+    <link>http://alicanb.github.io/authors/e.-ataer-cansizoglu/</link>
+    <description>Recent content in E. Ataer-Cansizoglu on Alican Bozkurt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
+    <lastBuildDate>Wed, 01 Jun 2016 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://alicanb.github.io/authors/e.-ataer-cansizoglu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</title>
+      <link>http://alicanb.github.io/publication/opthalmology-rop/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0900</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/opthalmology-rop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</title>
+      <link>http://alicanb.github.io/publication/tvst-rop/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://alicanb.github.io/publication/tvst-rop/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

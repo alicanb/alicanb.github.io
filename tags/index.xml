@@ -6,10 +6,20 @@
     <description>Recent content in Tags on Alican Bozkurt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Alican Bozkurt</copyright>
+    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
+    <lastBuildDate>Sun, 01 Nov 2015 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="http://alicanb.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>retinopathy of prematurity</title>
+      <link>http://alicanb.github.io/tags/retinopathy-of-prematurity/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://alicanb.github.io/tags/retinopathy-of-prematurity/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

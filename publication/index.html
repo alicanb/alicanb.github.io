@@ -5,11 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.2.0">
-  <meta name="generator" content="Hugo 0.51" />
-  <meta name="author" content="Alican Bozkurt">
+  <meta name="generator" content="Source Themes Academic 4.2.0">
+  <meta name="generator" content="Hugo 0.55.1" />
 
   
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alican Bozkurt">
+
   
   
   
@@ -48,7 +61,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
     
@@ -56,6 +69,14 @@
     
       
     
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
     
 
     
@@ -112,13 +133,16 @@
   
   <meta property="twitter:card" content="summary">
   
+  <meta property="twitter:site" content="@licanbozkurt">
+  <meta property="twitter:creator" content="@licanbozkurt">
+  
   <meta property="og:site_name" content="Alican Bozkurt">
   <meta property="og:url" content="http://alicanb.github.io/publication/">
   <meta property="og:title" content="Publications | Alican Bozkurt">
-  <meta property="og:description" content="PhD Student"><meta property="og:image" content="http://alicanb.github.io/img/portrait.jpg">
+  <meta property="og:description" content="PhD Student"><meta property="og:image" content="http://alicanb.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2017-01-01T00:00:00&#43;00:00">
+  <meta property="og:updated_time" content="2019-04-04T00:00:00&#43;09:00">
   
 
   
@@ -178,7 +202,7 @@
 
       
       
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
         
 
         
@@ -209,7 +233,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/publication/">
+          <a class="nav-link" href="/#featured">
             
             <span>Publications</span>
             
@@ -239,6 +263,9 @@
         
 
       
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
 
         
 
@@ -250,6 +277,10 @@
 
         
 
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
         
 
       </ul>
@@ -336,34 +367,47 @@
         
         
       
+        
+        
+      
 
-      <div class="form-row mb-3">
+      <div class="form-row mb-4">
         <div class="col-auto">
-          Filter by type:
+          <input type="search" class="filter-search" placeholder="Search..." autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
         </div>
         <div class="col-auto">
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*">All</option>
+            <option value="*">Type</option>
             
-            <option value=".pubtype-0">
-              Conference proceedings
-            </option>
+
             
             <option value=".pubtype-1">
-              Journal
+              
+              Conference paper
             </option>
             
             <option value=".pubtype-2">
-              Poster
+              
+              Journal article
+            </option>
+            
+            <option value=".pubtype-9">
+              
+              Extended abstract
             </option>
             
           </select>
         </div>
         <div class="col-auto">
           <select class="pub-filters form-control form-control-sm" data-filter-group="year">
-            <option value="*">All</option>
+            <option value="*">Date</option>
             
             
+            
+            <option value=".year-2019">
+              2019
+            </option>
             
             <option value=".year-2018">
               2018
@@ -397,23 +441,106 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2018">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A. Bozkurt, B. Esmaeili, J. G. Dy, D. H. Brooks, J.W. van de Meent</span>.
-  <a href="/publication/cract-vae/" itemprop="name">Can VAEs generate novel examples?</a>.
-  In <em>CRACT</em>,
-  2018.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">B. Esmaeili</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">H. Wu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">S. Jain</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">N. Siddarth</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">B. Paige</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J.W. van de Meent</a></span></span>
+  
+
+
+
+  </span>
+  (2019).
+  <a href="/publication/aistats-hfvae/" itemprop="name">Structured Disentagled Representations</a>.
+  In <em>AISTATS</em>.
+  
   <p>
 
 
 
 
 
-
   
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1804.02086" target="_blank" rel="noopener">
+  Preprint
+</a>
+
 
 
 
@@ -422,12 +549,17 @@
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.dropbox.com/s/747hie5k8dumkyo/CRACT_2018_paper_40.pdf?dl=0" target="_blank" rel="noopener">
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://proceedings.mlr.press/v89/esmaeili19a/esmaeili19a.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/aistats-hfvae/cite.bib">
+  Cite
+</button>
 
 
 
@@ -435,8 +567,11 @@
 
 
 
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/file/d/17qkx5Lh9bp6MGNtZcvXM32rmGGJjrOK-/view?usp=sharing" target="_blank" rel="noopener">
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/open?id=1dUnnsH9r5J17aGKLq-VSU7uzG45IwiOI" target="_blank" rel="noopener">
   Poster
 </a>
 
@@ -444,16 +579,29 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/file/d/1q6bKMJvJAhcw5kgJkuJlPwL5Oi-aCYGL/view?usp=sharing" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
-
-
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://proceedings.mlr.press/v89/esmaeili19a/esmaeili19a-supp.pdf" target="_blank" rel="noopener">
+    
+    Supplementary
+  </a>
 
 </p>
+
+  
+  
 </div>
 
           
@@ -465,21 +613,224 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2018">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2018">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A. Bozkurt, K. Kose, C. Alessi-Fox, M. Gill, D. H. Brooks, J. G. Dy, M. Rajadhyaksha</span>.
-  <a href="/publication/miccai-munet/" itemprop="name">A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</a>.
-  MICCAI,
-  2018.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">B. Esmaeili</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J.W. van de Meent</a></span></span>
+  
+
+
+
+  </span>
+  (2018).
+  <a href="/publication/cract-vae/" itemprop="name">Can VAEs generate novel examples?</a>.
+  In <em>CRACT</em>.
+  
   <p>
 
 
 
 
 
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1812.09624" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.dropbox.com/s/747hie5k8dumkyo/CRACT_2018_paper_40.pdf?dl=0" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/cract-vae/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/file/d/17qkx5Lh9bp6MGNtZcvXM32rmGGJjrOK-/view?usp=sharing" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/file/d/1q6bKMJvJAhcw5kgJkuJlPwL5Oi-aCYGL/view?usp=sharing" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">C. Alessi-Fox</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Gill</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Rajadhyaksha</a></span></span>
+  
+
+
+
+  </span>
+  (2018).
+  <a href="/publication/miccai-munet/" itemprop="name">A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</a>.
+  In <em>MICCAI</em>.
+  
+  <p>
+
+
+
+
+
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1802.02213v2" target="_blank" rel="noopener">
   Preprint
 </a>
@@ -488,12 +839,9 @@
 
 
   
-
-
-
-  
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://link.springer.com/chapter/10.1007/978-3-030-00934-2_33" target="_blank" rel="noopener">
@@ -513,8 +861,10 @@
 
 
 
-
-
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/open?id=1wtbiFOOqYRFFNjmbhDcKh8D-qvgYqZ0I" target="_blank" rel="noopener">
   Poster
 </a>
@@ -527,6 +877,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -538,21 +891,88 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2018">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-9 year-2018">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    K. Kose, A. Bozkurt, C. Alessi-Fox, M. Gill, D. H. Brooks, J. G. Dy, M. Rajadhyaksha</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">C. Alessi-Fox</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Gill</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Rajadhyaksha</a></span></span>
+  
+
+
+
+  </span>
+  (2018).
   <a href="/publication/osa-munet/" itemprop="name">A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</a>.
-  Microscopy Histopathology and Analytics,
-  2018.
+  Microscopy Histopathology and Analytics.
+  
   <p>
 
 
 
 
 
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1802.02213v1" target="_blank" rel="noopener">
   Preprint
 </a>
@@ -561,12 +981,9 @@
 
 
   
-
-
-
-  
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.osapublishing.org/viewmedia.cfm?uri=Microscopy-2018-MTh2A.1&amp;seq=0" target="_blank" rel="noopener">
@@ -594,6 +1011,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -605,21 +1025,88 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2017">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A. Bozkurt, K. Kose, J. Coll-Font, C. Alessi-Fox, D. H. Brooks, J. G. Dy, M. Rajadhyaksha</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. Coll-Font</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">C. Alessi-Fox</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Rajadhyaksha</a></span></span>
+  
+
+
+
+  </span>
+  (2017).
   <a href="/publication/ml4h-dej/" itemprop="name">Delineation of Skin Strata in Reflectance Confocal Microscopy Images using Recurrent Convolutional Networks with Toeplitz Attention</a>.
-  In <em>ML4H</em>,
-  2017.
+  In <em>ML4H</em>.
+  
   <p>
 
 
 
 
 
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1712.00192" target="_blank" rel="noopener">
   Preprint
 </a>
@@ -629,9 +1116,6 @@
 
   
 
-
-
-  
 
 
 
@@ -647,8 +1131,10 @@
 
 
 
-
-
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/open?id=18BbzDk-OoXmqUCqPnqF2xAWJqeF_KOdO" target="_blank" rel="noopener">
   Poster
 </a>
@@ -661,6 +1147,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -672,15 +1161,78 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2017">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A. Bozkurt, T. Gale, K. Kose, C. Alessi-Fox, D. H. Brooks, M. Rajadhyaksha, J. G. Dy</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">T. Gale</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">C. Alessi-Fox</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Rajadhyaksha</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>
+  
+
+
+
+  </span>
+  (2017).
   <a href="/publication/cvmi-dej/" itemprop="name">Delineation of Skin Strata in Reflectance Confocal Microscopy Images With Recurrent Convolutional Networks</a>.
-  In <em>CVPRW</em>,
-  2017.
+  In <em>CVMI</em>.
+  
   <p>
 
 
@@ -688,13 +1240,12 @@
 
 
 
-  
-
 
 
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w8/html/Bozkurt_Delineation_of_Skin_CVPR_2017_paper.html" target="_blank" rel="noopener">
@@ -716,8 +1267,10 @@
 
 
 
-
-
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.slideshare.net/secret/177naL6wOJEMc6" target="_blank" rel="noopener">
   Slides
 </a>
@@ -728,6 +1281,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -739,15 +1295,85 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2017">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-9 year-2017">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    K. Kose, A. Bozkurt, S. Ariafar, C. Alessi-Fox, M. Gill, J. G. Dy, D. H. Brooks, M. Rajadhyaksha</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">S. Ariafar</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">C. Alessi-Fox</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Gill</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Rajadhyaksha</a></span></span>
+  
+
+
+
+  </span>
+  (2017).
   <a href="/publication/spie-mosaic/" itemprop="name">Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</a>.
-  In <em>SPIE Photonics West BioS 2017</em>,
-  2017.
+  In <em>SPIE Photonics West BioS 2017</em>.
+  
   <p>
 
 
@@ -755,11 +1381,10 @@
 
 
 
+
+
   
 
-
-
-  
 
 
 
@@ -777,8 +1402,10 @@
 
 
 
-
-
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.slideshare.net/secret/g03HFlMVoqL63J" target="_blank" rel="noopener">
   Slides
 </a>
@@ -789,6 +1416,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -800,15 +1430,71 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2016">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A. Bozkurt, K. Kose, C. Alessi-Fox, J. G. Dy, D. H. Brooks, M. Rajadhyaksha</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">C. Alessi-Fox</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. G. Dy</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. H. Brooks</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Rajadhyaksha</a></span></span>
+  
+
+
+
+  </span>
+  (2016).
   <a href="/publication/srt-sc/" itemprop="name">Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</a>.
-  In <em>SRT</em>,
-  2016.
+  In <em>SRT</em>.
+  
   <p>
 
 
@@ -816,13 +1502,12 @@
 
 
 
-  
-
 
 
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://onlinelibrary.wiley.com/doi/10.1111/srt.12316/full" target="_blank" rel="noopener">
@@ -850,6 +1535,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -861,15 +1549,106 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2016">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    J.P. Campbell, E. Ataer-Cansizoglu, V. Bolon-Canedo, A. Bozkurt, D. Erdogmus, J. Kalpathy-Cramer, S.N. Patel, J.D. Reynolds, J. Horowitz, K. Hutcheson, others</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J.P. Campbell</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">E. Ataer-Cansizoglu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">V. Bolon-Canedo</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. Erdogmus</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. Kalpathy-Cramer</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">S.N. Patel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J.D. Reynolds</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. Horowitz</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Hutcheson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/others/">others</a></span></span>
+  
+
+
+
+  </span>
+  (2016).
   <a href="/publication/opthalmology-rop/" itemprop="name">Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</a>.
-  In <em>JAMA Opthalmology</em>,
-  2016.
+  In <em>JAMA Opthalmology</em>.
+  
   <p>
 
 
@@ -877,13 +1656,12 @@
 
 
 
-  
-
 
 
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://jamanetwork.com/journals/jamaophthalmology/fullarticle/2512091" target="_blank" rel="noopener">
@@ -911,6 +1689,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -922,15 +1703,113 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2015">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2015">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    E. Ataer-Cansizoglu, V. Bolon-Canedo, J.P. Campbell, A. Bozkurt, D. Erdogmus, J. Kalpathy-Cramer, S.N. Patel, K. Jonas, R.V.P. Chan, S. Ostmo, M.F. Chiang, on behalf of the i-ROP Research Consortium</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">E. Ataer-Cansizoglu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">V. Bolon-Canedo</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J.P. Campbell</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">D. Erdogmus</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">J. Kalpathy-Cramer</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">S.N. Patel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Jonas</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">R.V.P. Chan</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">S. Ostmo</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M.F. Chiang</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">on behalf of the i-ROP Research Consortium</a></span></span>
+  
+
+
+
+  </span>
+  (2015).
   <a href="/publication/tvst-rop/" itemprop="name">Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</a>.
-  In <em>TVST</em>,
-  2015.
+  In <em>TVST</em>.
+  
   <p>
 
 
@@ -938,13 +1817,12 @@
 
 
 
-  
-
 
 
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://tvst.arvojournals.org/article.aspx?articleid=2474056" target="_blank" rel="noopener">
@@ -972,6 +1850,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -983,15 +1864,50 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2015">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2015">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A. Bozkurt, P. Duygulu, A.E. Cetin</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">P. Duygulu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">A.E. Cetin</a></span></span>
+  
+
+
+
+  </span>
+  (2015).
   <a href="/publication/sivp-fonts/" itemprop="name">Classifying fonts and calligraphy styles using complex wavelet transform</a>.
-  In <em>SIVP</em>,
-  2015.
+  In <em>SIVP</em>.
+  
   <p>
 
 
@@ -999,13 +1915,12 @@
 
 
 
-  
-
 
 
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://link.springer.com/article/10.1007/s11760-015-0795-z" target="_blank" rel="noopener">
@@ -1021,8 +1936,10 @@
 
 
 
-
-
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/alicanb/fonts" target="_blank" rel="noopener">
   Dataset
 </a>
@@ -1033,8 +1950,10 @@
 
 
 
-
-
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.slideshare.net/alicanb/classification-of-fonts-and-calligraphy-styles-based-on-complex-wavelet-transform" target="_blank" rel="noopener">
   Slides
 </a>
@@ -1045,6 +1964,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -1056,15 +1978,50 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2014">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A. Bozkurt, A. Suhre, A.E. Cetin</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">A. Suhre</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">A.E. Cetin</a></span></span>
+  
+
+
+
+  </span>
+  (2014).
   <a href="/publication/sivp-fl/" itemprop="name">Multi-scale directional-filtering-based method for follicular lymphoma grading</a>.
-  In <em>SIVP</em>,
-  2014.
+  In <em>SIVP</em>.
+  
   <p>
 
 
@@ -1072,13 +2029,12 @@
 
 
 
-  
-
 
 
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://link.springer.com/article/10.1007/s11760-014-0681-0" target="_blank" rel="noopener">
@@ -1100,8 +2056,10 @@
 
 
 
-
-
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.slideshare.net/alicanb/multi-scale-directional-filtering-based-method-for-follicular-lymphoma-grading" target="_blank" rel="noopener">
   Slides
 </a>
@@ -1112,6 +2070,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -1123,21 +2084,67 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2014">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    M. Tofighi, A. Bozkurt, K. Kose, A.E. Cetin</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Tofighi</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">A.E. Cetin</a></span></span>
+  
+
+
+
+  </span>
+  (2014).
   <a href="/publication/siu-pocs-deconvolution/" itemprop="name">Deconvolution using projections onto the epigraph set of a convex cost function</a>.
-  In <em>SIU</em>,
-  2014.
+  In <em>SIU</em>.
+  
   <p>
 
 
 
 
 
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1402.5818" target="_blank" rel="noopener">
   Preprint
 </a>
@@ -1147,9 +2154,6 @@
 
   
 
-
-
-  
 
 
 
@@ -1173,6 +2177,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -1184,21 +2191,95 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2014">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    A.E. Cetin, A. Bozkurt, O. Gunay, Y.H. Habiboglu, K. Kose, I. Onaran, M. Tofighi, R.A. Sevimli</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">A.E. Cetin</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/admin/">Alican Bozkurt</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">O. Gunay</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Y.H. Habiboglu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">K. Kose</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">I. Onaran</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">M. Tofighi</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">R.A. Sevimli</a></span></span>
+  
+
+
+
+  </span>
+  (2014).
   <a href="/publication/globalsip-pocs/" itemprop="name">Projections onto convex sets (POCS) based optimization by lifting</a>.
-  In <em>GlobalSIP</em>,
-  2014.
+  In <em>GlobalSIP</em>.
+  
   <p>
 
 
 
 
 
+  
+  
+    
+  
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1306.2516" target="_blank" rel="noopener">
   Preprint
 </a>
@@ -1208,9 +2289,6 @@
 
   
 
-
-
-  
 
 
 
@@ -1234,6 +2312,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
           
@@ -1250,7 +2331,7 @@
   
 
   <p class="powered-by">
-    &copy; 2018 Alican Bozkurt &middot; 
+    &copy; 2019 Alican Bozkurt &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1308,11 +2389,15 @@
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
       
 
       
@@ -1331,6 +2416,8 @@
     
 
     
+    
+    <script>hljs.initHighlightingOnLoad();</script>
     
 
     
@@ -1385,10 +2472,12 @@
     
     
     
+      
     
-    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
-
     
+    
+    
+    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
 
   </body>
 </html>
