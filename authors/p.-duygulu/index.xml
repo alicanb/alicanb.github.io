@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Thu, 23 Jul 2015 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://alicanb.github.io/authors/p.-duygulu/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Classifying fonts and calligraphy styles using complex wavelet transform</title>
       <link>http://alicanb.github.io/publication/sivp-fonts/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/publication/sivp-fonts/</guid>
       <description></description>

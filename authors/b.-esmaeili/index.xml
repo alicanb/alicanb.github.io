@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Thu, 04 Apr 2019 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://alicanb.github.io/authors/b.-esmaeili/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Structured Disentagled Representations</title>
       <link>http://alicanb.github.io/publication/aistats-hfvae/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/publication/aistats-hfvae/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Can VAEs generate novel examples?</title>
       <link>http://alicanb.github.io/publication/cract-vae/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0900</pubDate>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>http://alicanb.github.io/publication/cract-vae/</guid>
       <description></description>

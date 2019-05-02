@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Fri, 06 Apr 2018 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Apr 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://alicanb.github.io/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
       <link>http://alicanb.github.io/publication/osa-munet/</link>
-      <pubDate>Fri, 06 Apr 2018 00:00:00 +0900</pubDate>
+      <pubDate>Fri, 06 Apr 2018 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/publication/osa-munet/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</title>
       <link>http://alicanb.github.io/publication/spie-mosaic/</link>
-      <pubDate>Sat, 28 Jan 2017 00:00:00 +0900</pubDate>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>http://alicanb.github.io/publication/spie-mosaic/</guid>
       <description></description>
