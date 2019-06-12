@@ -4,11 +4,11 @@
     <title>Categories on Alican Bozkurt</title>
     <link>http://alicanb.github.io/categories/</link>
     <description>Recent content in Categories on Alican Bozkurt</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
     
-	<atom:link href="http://alicanb.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://alicanb.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

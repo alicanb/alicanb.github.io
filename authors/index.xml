@@ -4,12 +4,12 @@
     <title>Authors on Alican Bozkurt</title>
     <link>http://alicanb.github.io/authors/</link>
     <description>Recent content in Authors on Alican Bozkurt</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
     <lastBuildDate>Thu, 04 Apr 2019 00:00:00 -0400</lastBuildDate>
     
-	<atom:link href="http://alicanb.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://alicanb.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -81,15 +81,6 @@
       <pubDate>Thu, 04 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>http://alicanb.github.io/authors/s.-jain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>admin</title>
-      <link>http://alicanb.github.io/authors/admin/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 -0400</pubDate>
-      
-      <guid>http://alicanb.github.io/authors/admin/</guid>
       <description></description>
     </item>
     
@@ -361,6 +352,16 @@
       
       <guid>http://alicanb.github.io/authors/y.h.-habiboglu/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://alicanb.github.io/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://alicanb.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;Alican Bozkurt is a Ph.D. student under supervision of &lt;a href=&#34;http://www.ece.neu.edu/people/dy-jennifer&#34; target=&#34;_blank&#34;&gt;Jennifer Dy&lt;/a&gt;, &lt;a href=&#34;http://www.ece.neu.edu/people/brooks-dana&#34; target=&#34;_blank&#34;&gt;Dana Brooks&lt;/a&gt;, and &lt;a href=&#34;http://www.ccs.neu.edu/home/jwvdm/&#34; target=&#34;_blank&#34;&gt;Jan-Willem van de Meent&lt;/a&gt; at Northeastern University. His main research interests are machine learning with emphasis on probabilistic programming, deep neural networks, and their applications in biomedical image processing. He is one of the developers of &lt;a href=&#34;https://github.com/probtorch/probtorch&#34; target=&#34;_blank&#34;&gt;Probabilistic Torch&lt;/a&gt;, a library for deep generative models that extends PyTorch, a framework which he also contributes.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
