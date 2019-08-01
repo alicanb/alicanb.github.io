@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>9 on Alican Bozkurt</title>
+    <title>9 | Alican Bozkurt</title>
     <link>http://alicanb.github.io/publication_types/9/</link>
-    <description>Recent content in 9 on Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Fri, 06 Apr 2018 00:00:00 -0400</lastBuildDate>
-    
-	    <atom:link href="http://alicanb.github.io/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://alicanb.github.io/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
+    <description>9</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Fri, 06 Apr 2018 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <title>9</title>
+      <link>http://alicanb.github.io/publication_types/9/</link>
+    </image>
     
     <item>
       <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
       <link>http://alicanb.github.io/publication/osa-munet/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/publication/osa-munet/</guid>
       <description></description>
     </item>
@@ -25,7 +24,6 @@
       <title>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</title>
       <link>http://alicanb.github.io/publication/spie-mosaic/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 -0500</pubDate>
-      
       <guid>http://alicanb.github.io/publication/spie-mosaic/</guid>
       <description></description>
     </item>

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Alican Bozkurt</title>
+    <title>Tags | Alican Bozkurt</title>
     <link>http://alicanb.github.io/tags/</link>
-    <description>Recent content in Tags on Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Sun, 01 Nov 2015 00:00:00 -0400</lastBuildDate>
-    
-	    <atom:link href="http://alicanb.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://alicanb.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Sun, 01 Nov 2015 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <title>Tags</title>
+      <link>http://alicanb.github.io/tags/</link>
+    </image>
     
     <item>
       <title>retinopathy of prematurity</title>
       <link>http://alicanb.github.io/tags/retinopathy-of-prematurity/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/tags/retinopathy-of-prematurity/</guid>
       <description></description>
     </item>

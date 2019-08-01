@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>S. Ostmo on Alican Bozkurt</title>
+    <title>S. Ostmo | Alican Bozkurt</title>
     <link>http://alicanb.github.io/authors/s.-ostmo/</link>
-    <description>Recent content in S. Ostmo on Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Sun, 01 Nov 2015 00:00:00 -0400</lastBuildDate>
-    
-	    <atom:link href="http://alicanb.github.io/authors/s.-ostmo/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://alicanb.github.io/authors/s.-ostmo/index.xml" rel="self" type="application/rss+xml" />
+    <description>S. Ostmo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Sun, 01 Nov 2015 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <title>S. Ostmo</title>
+      <link>http://alicanb.github.io/authors/s.-ostmo/</link>
+    </image>
     
     <item>
       <title>Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</title>
       <link>http://alicanb.github.io/publication/tvst-rop/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/publication/tvst-rop/</guid>
       <description></description>
     </item>

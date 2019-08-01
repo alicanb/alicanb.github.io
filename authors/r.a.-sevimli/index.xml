@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R.A. Sevimli on Alican Bozkurt</title>
+    <title>R.A. Sevimli | Alican Bozkurt</title>
     <link>http://alicanb.github.io/authors/r.a.-sevimli/</link>
-    <description>Recent content in R.A. Sevimli on Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Thu, 13 Feb 2014 00:00:00 -0500</lastBuildDate>
-    
-	    <atom:link href="http://alicanb.github.io/authors/r.a.-sevimli/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://alicanb.github.io/authors/r.a.-sevimli/index.xml" rel="self" type="application/rss+xml" />
+    <description>R.A. Sevimli</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Thu, 13 Feb 2014 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <title>R.A. Sevimli</title>
+      <link>http://alicanb.github.io/authors/r.a.-sevimli/</link>
+    </image>
     
     <item>
       <title>Projections onto convex sets (POCS) based optimization by lifting</title>
       <link>http://alicanb.github.io/publication/globalsip-pocs/</link>
       <pubDate>Thu, 13 Feb 2014 00:00:00 -0500</pubDate>
-      
       <guid>http://alicanb.github.io/publication/globalsip-pocs/</guid>
       <description></description>
     </item>

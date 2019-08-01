@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C. Alessi-Fox on Alican Bozkurt</title>
+    <title>C. Alessi-Fox | Alican Bozkurt</title>
     <link>http://alicanb.github.io/authors/c.-alessi-fox/</link>
-    <description>Recent content in C. Alessi-Fox on Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Thu, 23 Aug 2018 00:00:00 -0400</lastBuildDate>
-    
-	    <atom:link href="http://alicanb.github.io/authors/c.-alessi-fox/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://alicanb.github.io/authors/c.-alessi-fox/index.xml" rel="self" type="application/rss+xml" />
+    <description>C. Alessi-Fox</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Thu, 23 Aug 2018 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <title>C. Alessi-Fox</title>
+      <link>http://alicanb.github.io/authors/c.-alessi-fox/</link>
+    </image>
     
     <item>
       <title>A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</title>
       <link>http://alicanb.github.io/publication/miccai-munet/</link>
       <pubDate>Thu, 23 Aug 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/publication/miccai-munet/</guid>
       <description></description>
     </item>
@@ -25,7 +24,6 @@
       <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
       <link>http://alicanb.github.io/publication/osa-munet/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/publication/osa-munet/</guid>
       <description></description>
     </item>
@@ -34,7 +32,6 @@
       <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images With Recurrent Convolutional Networks</title>
       <link>http://alicanb.github.io/publication/cvmi-dej/</link>
       <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/publication/cvmi-dej/</guid>
       <description></description>
     </item>
@@ -43,7 +40,6 @@
       <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images using Recurrent Convolutional Networks with Toeplitz Attention</title>
       <link>http://alicanb.github.io/publication/ml4h-dej/</link>
       <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/publication/ml4h-dej/</guid>
       <description></description>
     </item>
@@ -52,7 +48,6 @@
       <title>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</title>
       <link>http://alicanb.github.io/publication/spie-mosaic/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 -0500</pubDate>
-      
       <guid>http://alicanb.github.io/publication/spie-mosaic/</guid>
       <description></description>
     </item>
@@ -61,7 +56,6 @@
       <title>Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</title>
       <link>http://alicanb.github.io/publication/srt-sc/</link>
       <pubDate>Fri, 12 Aug 2016 00:00:00 -0400</pubDate>
-      
       <guid>http://alicanb.github.io/publication/srt-sc/</guid>
       <description></description>
     </item>

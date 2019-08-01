@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>S. Ariafar on Alican Bozkurt</title>
+    <title>S. Ariafar | Alican Bozkurt</title>
     <link>http://alicanb.github.io/authors/s.-ariafar/</link>
-    <description>Recent content in S. Ariafar on Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Alican Bozkurt</copyright>
-    <lastBuildDate>Sat, 28 Jan 2017 00:00:00 -0500</lastBuildDate>
-    
-	    <atom:link href="http://alicanb.github.io/authors/s.-ariafar/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://alicanb.github.io/authors/s.-ariafar/index.xml" rel="self" type="application/rss+xml" />
+    <description>S. Ariafar</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Sat, 28 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <title>S. Ariafar</title>
+      <link>http://alicanb.github.io/authors/s.-ariafar/</link>
+    </image>
     
     <item>
       <title>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</title>
       <link>http://alicanb.github.io/publication/spie-mosaic/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 -0500</pubDate>
-      
       <guid>http://alicanb.github.io/publication/spie-mosaic/</guid>
       <description></description>
     </item>
