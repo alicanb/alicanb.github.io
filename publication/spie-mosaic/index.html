@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.4.0">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -35,8 +35,6 @@
 
   
 
-
-  
 
   
   
@@ -78,13 +76,14 @@
 
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
   
 
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.dd629241ea9333c62c071f4a25f829ff.css">
+  <link rel="stylesheet" href="/css/academic.min.04a87a1cb9027e3c50f566322527c56f.css">
 
   
 
@@ -137,6 +136,60 @@
     
     <meta property="article:modified_time" content="2017-01-28T00:00:00-05:00">
   
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://alicanb.github.io/publication/spie-mosaic/"
+  },
+  "headline": "Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions",
+  
+  "datePublished": "2017-01-28T00:00:00-05:00",
+  "dateModified": "2017-01-28T00:00:00-05:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alican Bozkurt",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://alicanb.github.io/img/icon-512.png"
+    }
+  },
+  "description": "In this study we present a deep learning based classification algorithm for discriminating morphological patterns that appear in RCM mosaics of melanocytic lesions collected at the dermal epidermal junction (DEJ). These patterns are classified into 6 distinct types in the literature: background, meshwork, ring, clod, mixed, and aspecific. Clinicians typically identify these morphological patterns by examination of their textural appearance at 10X magnification. To mimic this process we divided mosaics into smaller regions, which we call tiles, and classify each tile in a deep learning framework. We used previously acquired DEJ mosaics of lesions deemed clinically suspicious, from 20 different patients, which were then labelled according to those 6 types by 2 expert users. We tried three different approaches for classification, all starting with a publicly available convolutional neural network (CNN) trained on natural image, consisting of a series of convolutional layers followed by a series of fully connected layers: (1) We fine-tuned this network using training data from the dataset. (2) Instead, we added an additional fully connected layer before the output layer network and then re-trained only last two layers, (3) We used only the CNN convolutional layers as a feature extractor, encoded the features using a bag of words model, and trained a support vector machine (SVM) classifier. Sensitivity and specificity were generally comparable across the three methods, and in the same ranges as our previous work using SURF features with SVM .  Approach (3) was less computationally intensive to train but more sensitive to unbalanced representation of the 6 classes in the training data. However we expect CNN performance to improve as we add more training data because both the features and the classifier are learned jointly from the data. *First two authors share first authorship.*"
+}
+</script>
+
+  
+
+  
+
 
   
 
@@ -345,7 +398,7 @@
 </nav>
 
 
-  <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="pub">
 
   
 
@@ -360,7 +413,7 @@
 <div class="article-header">
   
   
-  <img src="/img/banners/mosaic.png" class="article-banner" itemprop="image" alt="">
+  <img src="/img/banners/mosaic.png" class="article-banner" alt="">
   
 
   <span class="article-header-caption">Segmentations for 3 RCM mosaics</span>
@@ -375,7 +428,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</h1>
+  <h1>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</h1>
 
   
 
@@ -383,9 +436,6 @@
     
 
 
-
-<meta content="2017-01-28 00:00:00 -0500 EST" itemprop="datePublished">
-<meta content="2017-01-28 00:00:00 -0500 EST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -398,7 +448,7 @@
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/k.-kose/">K. Kose</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Alican Bozkurt</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/s.-ariafar/">S. Ariafar</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/m.-gill/">M. Gill</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
+  <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/s.-ariafar/">S. Ariafar</a></span>, <span><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span><a href="/authors/m.-gill/">M. Gill</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
 
   </div>
   
@@ -410,7 +460,7 @@
     
       
     
-    <time>January 2017</time>
+    January 2017
   </span>
   
 
@@ -588,7 +638,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">In this study we present a deep learning based classification algorithm for discriminating morphological patterns that appear in RCM mosaics of melanocytic lesions collected at the dermal epidermal junction (DEJ). These patterns are classified into 6 distinct types in the literature: background, meshwork, ring, clod, mixed, and aspecific. Clinicians typically identify these morphological patterns by examination of their textural appearance at 10X magnification. To mimic this process we divided mosaics into smaller regions, which we call tiles, and classify each tile in a deep learning framework. We used previously acquired DEJ mosaics of lesions deemed clinically suspicious, from 20 different patients, which were then labelled according to those 6 types by 2 expert users. We tried three different approaches for classification, all starting with a publicly available convolutional neural network (CNN) trained on natural image, consisting of a series of convolutional layers followed by a series of fully connected layers: (1) We fine-tuned this network using training data from the dataset. (2) Instead, we added an additional fully connected layer before the output layer network and then re-trained only last two layers, (3) We used only the CNN convolutional layers as a feature extractor, encoded the features using a bag of words model, and trained a support vector machine (SVM) classifier. Sensitivity and specificity were generally comparable across the three methods, and in the same ranges as our previous work using SURF features with SVM .  Approach (3) was less computationally intensive to train but more sensitive to unbalanced representation of the 6 classes in the training data. However we expect CNN performance to improve as we add more training data because both the features and the classifier are learned jointly from the data. <em>First two authors share first authorship.</em></p>
+    <p class="pub-abstract">In this study we present a deep learning based classification algorithm for discriminating morphological patterns that appear in RCM mosaics of melanocytic lesions collected at the dermal epidermal junction (DEJ). These patterns are classified into 6 distinct types in the literature: background, meshwork, ring, clod, mixed, and aspecific. Clinicians typically identify these morphological patterns by examination of their textural appearance at 10X magnification. To mimic this process we divided mosaics into smaller regions, which we call tiles, and classify each tile in a deep learning framework. We used previously acquired DEJ mosaics of lesions deemed clinically suspicious, from 20 different patients, which were then labelled according to those 6 types by 2 expert users. We tried three different approaches for classification, all starting with a publicly available convolutional neural network (CNN) trained on natural image, consisting of a series of convolutional layers followed by a series of fully connected layers: (1) We fine-tuned this network using training data from the dataset. (2) Instead, we added an additional fully connected layer before the output layer network and then re-trained only last two layers, (3) We used only the CNN convolutional layers as a feature extractor, encoded the features using a bag of words model, and trained a support vector machine (SVM) classifier. Sensitivity and specificity were generally comparable across the three methods, and in the same ranges as our previous work using SURF features with SVM .  Approach (3) was less computationally intensive to train but more sensitive to unbalanced representation of the 6 classes in the training data. However we expect CNN performance to improve as we add more training data because both the features and the classifier are learned jointly from the data. <em>First two authors share first authorship.</em></p>
     
 
     
@@ -652,15 +702,16 @@
 
 
 
+
   
   
   
   
-  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  <div class="media author-card">
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="/authors/k.-kose/"></a></h5>
+      <h5 class="card-title"><a href="/authors/k.-kose/"></a></h5>
       
       
       <ul class="network-icon" aria-hidden="true">
@@ -784,7 +835,7 @@
     
     
     
-    <script src="/js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script>
+    <script src="/js/academic.min.130521ecfc6f534c52c158217bbff718.js"></script>
 
     
 

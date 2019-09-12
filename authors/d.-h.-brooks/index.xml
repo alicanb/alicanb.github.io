@@ -5,12 +5,20 @@
     <link>http://alicanb.github.io/authors/d.-h.-brooks/</link>
       <atom:link href="http://alicanb.github.io/authors/d.-h.-brooks/index.xml" rel="self" type="application/rss+xml" />
     <description>D. H. Brooks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Thu, 04 Apr 2019 00:00:00 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Thu, 08 Aug 2019 00:00:00 -0400</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/img/icon-192.png</url>
       <title>D. H. Brooks</title>
       <link>http://alicanb.github.io/authors/d.-h.-brooks/</link>
     </image>
+    
+    <item>
+      <title>Facilitating the Adoption of Reflectance Confocal Microscopy (RCM) in Clinical Cancer Care Practice with Machine Learning</title>
+      <link>http://alicanb.github.io/publication/stanford-fac/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 -0400</pubDate>
+      <guid>http://alicanb.github.io/publication/stanford-fac/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Structured Disentagled Representations</title>
@@ -45,18 +53,18 @@
     </item>
     
     <item>
-      <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images With Recurrent Convolutional Networks</title>
-      <link>http://alicanb.github.io/publication/cvmi-dej/</link>
-      <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
-      <guid>http://alicanb.github.io/publication/cvmi-dej/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images using Recurrent Convolutional Networks with Toeplitz Attention</title>
       <link>http://alicanb.github.io/publication/ml4h-dej/</link>
       <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
       <guid>http://alicanb.github.io/publication/ml4h-dej/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images With Recurrent Convolutional Networks</title>
+      <link>http://alicanb.github.io/publication/cvmi-dej/</link>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
+      <guid>http://alicanb.github.io/publication/cvmi-dej/</guid>
       <description></description>
     </item>
     

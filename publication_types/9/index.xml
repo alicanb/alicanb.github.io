@@ -5,12 +5,20 @@
     <link>http://alicanb.github.io/publication_types/9/</link>
       <atom:link href="http://alicanb.github.io/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
     <description>9</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Fri, 06 Apr 2018 00:00:00 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Thu, 08 Aug 2019 00:00:00 -0400</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/img/icon-192.png</url>
       <title>9</title>
       <link>http://alicanb.github.io/publication_types/9/</link>
     </image>
+    
+    <item>
+      <title>Facilitating the Adoption of Reflectance Confocal Microscopy (RCM) in Clinical Cancer Care Practice with Machine Learning</title>
+      <link>http://alicanb.github.io/publication/stanford-fac/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 -0400</pubDate>
+      <guid>http://alicanb.github.io/publication/stanford-fac/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
