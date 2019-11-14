@@ -1,10 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://alicanb.github.io/authors/admin/</loc>
-    <lastmod>2019-08-08T00:00:00-04:00</lastmod>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/publication_types/0/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/authors/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/authors/b.-esmaeili/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/authors/d.-h.-brooks/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/publication/arxiv-combgen/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/authors/j.-g.-dy/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/authors/j.w.-van-de-meent/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/publication_types/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/publication/</loc>
+    <lastmod>2019-11-11T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -13,27 +63,7 @@
   </url>
   
   <url>
-    <loc>http://alicanb.github.io/</loc>
-    <lastmod>2019-08-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://alicanb.github.io/authors/</loc>
-    <lastmod>2019-08-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://alicanb.github.io/authors/d.-h.-brooks/</loc>
-    <lastmod>2019-08-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://alicanb.github.io/publication/stanford-fac/</loc>
-    <lastmod>2019-08-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://alicanb.github.io/authors/j.-g.-dy/</loc>
     <lastmod>2019-08-08T00:00:00-04:00</lastmod>
   </url>
   
@@ -48,22 +78,7 @@
   </url>
   
   <url>
-    <loc>http://alicanb.github.io/publication_types/</loc>
-    <lastmod>2019-08-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://alicanb.github.io/publication/</loc>
-    <lastmod>2019-08-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://alicanb.github.io/publication_types/1/</loc>
-    <lastmod>2019-04-04T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://alicanb.github.io/authors/b.-esmaeili/</loc>
     <lastmod>2019-04-04T00:00:00-04:00</lastmod>
   </url>
   
@@ -74,11 +89,6 @@
   
   <url>
     <loc>http://alicanb.github.io/authors/h.-wu/</loc>
-    <lastmod>2019-04-04T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://alicanb.github.io/authors/j.w.-van-de-meent/</loc>
     <lastmod>2019-04-04T00:00:00-04:00</lastmod>
   </url>
   

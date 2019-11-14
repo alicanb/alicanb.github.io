@@ -5,12 +5,20 @@
     <link>http://alicanb.github.io/authors/admin/</link>
       <atom:link href="http://alicanb.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Thu, 08 Aug 2019 00:00:00 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Mon, 11 Nov 2019 00:00:00 -0500</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/img/icon-192.png</url>
       <title>Alican Bozkurt</title>
       <link>http://alicanb.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Evaluating Combinatorial Generalization in Variational Autoencoders</title>
+      <link>http://alicanb.github.io/publication/arxiv-combgen/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/publication/arxiv-combgen/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Facilitating the Adoption of Reflectance Confocal Microscopy (RCM) in Clinical Cancer Care Practice with Machine Learning</title>

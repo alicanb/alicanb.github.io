@@ -48,8 +48,8 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
     
@@ -60,14 +60,14 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
     
@@ -83,27 +83,52 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.04a87a1cb9027e3c50f566322527c56f.css">
+  
+  <link rel="stylesheet" href="/css/academic.css">
 
   
 
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45449733-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-45449733-2', {});
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-45449733-2', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
-  
+
 
   
   <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Alican Bozkurt">
@@ -134,7 +159,7 @@
   <meta property="og:description" content="PhD Student"><meta property="og:image" content="http://alicanb.github.io/img/icon-192.png">
   <meta property="twitter:image" content="http://alicanb.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2019-08-08T00:00:00-04:00">
+    <meta property="og:updated_time" content="2019-11-11T00:00:00-05:00">
   
 
   
@@ -432,6 +457,9 @@
         
         
       
+        
+        
+      
 
       <div class="form-row mb-4">
         <div class="col-auto">
@@ -442,6 +470,10 @@
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
             <option value="*">Type</option>
             
+            
+            <option value=".pubtype-0">
+              Uncategorized
+            </option>
             
             <option value=".pubtype-1">
               Conference paper
@@ -499,6 +531,81 @@
           
         
 
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/b.-esmaeili/">B. Esmaeili</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/j.w.-van-de-meent/">J.W. van de Meent</a></span>
+
+  </span>.
+  <a href="/publication/arxiv-combgen/">Evaluating Combinatorial Generalization in Variational Autoencoders</a>.
+  In <em>arXiv</em>,
+  2019.
+  <p>
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1911.04594" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/arxiv-combgen/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
         <div class="grid-sizer col-lg-12 isotope-item pubtype-9 year-2019">
           
             <div class="pub-list-item" style="margin-bottom: 1rem">
@@ -512,6 +619,7 @@
 
 
 
+  
   <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
 
   </span>.
@@ -587,6 +695,7 @@
 
 
 
+  
   <span><a href="/authors/b.-esmaeili/">B. Esmaeili</a></span>, <span><a href="/authors/h.-wu/">H. Wu</a></span>, <span><a href="/authors/s.-jain/">S. Jain</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/n.-siddarth/">N. Siddarth</a></span>, <span><a href="/authors/b.-paige/">B. Paige</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/j.w.-van-de-meent/">J.W. van de Meent</a></span>
 
   </span>.
@@ -691,6 +800,7 @@
 
 
 
+  
   <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/b.-esmaeili/">B. Esmaeili</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/j.w.-van-de-meent/">J.W. van de Meent</a></span>
 
   </span>.
@@ -787,6 +897,7 @@
 
 
 
+  
   <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span><a href="/authors/m.-gill/">M. Gill</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
 
   </span>.
@@ -875,6 +986,7 @@
 
 
 
+  
   <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span><a href="/authors/m.-gill/">M. Gill</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
 
   </span>.
@@ -955,6 +1067,7 @@
 
 
 
+  
   <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/t.-gale/">T. Gale</a></span>, <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>
 
   </span>.
@@ -1035,6 +1148,7 @@
 
 
 
+  
   <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/j.-coll-font/">J. Coll-Font</a></span>, <span><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
 
   </span>.
@@ -1117,6 +1231,7 @@
 
 
 
+  
   <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/s.-ariafar/">S. Ariafar</a></span>, <span><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span><a href="/authors/m.-gill/">M. Gill</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
 
   </span>.
@@ -1191,6 +1306,7 @@
 
 
 
+  
   <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/c.-alessi-fox/">C. Alessi-Fox</a></span>, <span><a href="/authors/j.-g.-dy/">J. G. Dy</a></span>, <span><a href="/authors/d.-h.-brooks/">D. H. Brooks</a></span>, <span><a href="/authors/m.-rajadhyaksha/">M. Rajadhyaksha</a></span>
 
   </span>.
@@ -1263,6 +1379,7 @@
 
 
 
+  
   <span><a href="/authors/j.p.-campbell/">J.P. Campbell</a></span>, <span><a href="/authors/e.-ataer-cansizoglu/">E. Ataer-Cansizoglu</a></span>, <span><a href="/authors/v.-bolon-canedo/">V. Bolon-Canedo</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/d.-erdogmus/">D. Erdogmus</a></span>, <span><a href="/authors/j.-kalpathy-cramer/">J. Kalpathy-Cramer</a></span>, <span><a href="/authors/s.n.-patel/">S.N. Patel</a></span>, <span><a href="/authors/j.d.-reynolds/">J.D. Reynolds</a></span>, <span><a href="/authors/j.-horowitz/">J. Horowitz</a></span>, <span><a href="/authors/k.-hutcheson/">K. Hutcheson</a></span>, <span><a href="/authors/others/">others</a></span>
 
   </span>.
@@ -1335,6 +1452,7 @@
 
 
 
+  
   <span><a href="/authors/e.-ataer-cansizoglu/">E. Ataer-Cansizoglu</a></span>, <span><a href="/authors/v.-bolon-canedo/">V. Bolon-Canedo</a></span>, <span><a href="/authors/j.p.-campbell/">J.P. Campbell</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/d.-erdogmus/">D. Erdogmus</a></span>, <span><a href="/authors/j.-kalpathy-cramer/">J. Kalpathy-Cramer</a></span>, <span><a href="/authors/s.n.-patel/">S.N. Patel</a></span>, <span><a href="/authors/k.-jonas/">K. Jonas</a></span>, <span><a href="/authors/r.v.p.-chan/">R.V.P. Chan</a></span>, <span><a href="/authors/s.-ostmo/">S. Ostmo</a></span>, <span><a href="/authors/m.f.-chiang/">M.F. Chiang</a></span>, <span><a href="/authors/on-behalf-of-the-i-rop-research-consortium/">on behalf of the i-ROP Research Consortium</a></span>
 
   </span>.
@@ -1407,6 +1525,7 @@
 
 
 
+  
   <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/p.-duygulu/">P. Duygulu</a></span>, <span><a href="/authors/a.e.-cetin/">A.E. Cetin</a></span>
 
   </span>.
@@ -1495,6 +1614,7 @@
 
 
 
+  
   <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/a.-suhre/">A. Suhre</a></span>, <span><a href="/authors/a.e.-cetin/">A.E. Cetin</a></span>
 
   </span>.
@@ -1575,6 +1695,7 @@
 
 
 
+  
   <span><a href="/authors/m.-tofighi/">M. Tofighi</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/a.e.-cetin/">A.E. Cetin</a></span>
 
   </span>.
@@ -1649,6 +1770,7 @@
 
 
 
+  
   <span><a href="/authors/a.e.-cetin/">A.E. Cetin</a></span>, <span><a href="/authors/admin/">Alican Bozkurt</a></span>, <span><a href="/authors/o.-gunay/">O. Gunay</a></span>, <span><a href="/authors/y.h.-habiboglu/">Y.H. Habiboglu</a></span>, <span><a href="/authors/k.-kose/">K. Kose</a></span>, <span><a href="/authors/i.-onaran/">I. Onaran</a></span>, <span><a href="/authors/m.-tofighi/">M. Tofighi</a></span>, <span><a href="/authors/r.a.-sevimli/">R.A. Sevimli</a></span>
 
   </span>.
@@ -1725,27 +1847,27 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
         
       
 
       
       
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
 
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     
@@ -1755,13 +1877,13 @@
 
     
     
+    
+    
+    
+    
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
       const content_type = {
         'post': "Posts",
         'project': "Projects",
@@ -1815,7 +1937,7 @@
     
     
     
-    <script src="/js/academic.min.130521ecfc6f534c52c158217bbff718.js"></script>
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
 
     
 
@@ -1824,6 +1946,7 @@
 
 
 
+  
   
   <div class="container">
     <footer class="site-footer">
@@ -1838,7 +1961,7 @@
 
     
     <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
+      <a href="#" class="back-to-top">
         <span class="button_icon">
           <i class="fas fa-chevron-up fa-2x"></i>
         </span>
