@@ -5,12 +5,20 @@
     <link>http://alicanb.github.io/publication_types/2/</link>
       <atom:link href="http://alicanb.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Fri, 12 Aug 2016 00:00:00 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Tue, 17 Dec 2019 00:00:00 -0500</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/img/icon-192.png</url>
       <title>2</title>
       <link>http://alicanb.github.io/publication_types/2/</link>
     </image>
+    
+    <item>
+      <title>Utilizing Machine Learning for Image Quality Assessment for Reflectance Confocal Microscopy</title>
+      <link>http://alicanb.github.io/publication/jid-mednet/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/publication/jid-mednet/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</title>
@@ -41,7 +49,7 @@
       <link>http://alicanb.github.io/publication/sivp-fonts/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 -0400</pubDate>
       <guid>http://alicanb.github.io/publication/sivp-fonts/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;fonts.png&#34; alt=&#34;Example classification of a document&#34; title=&#34;Example classification of a document&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;fonts.png&#34; alt=&#34;Example classification of a document&#34; title=&#34;Example classification of a document&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     

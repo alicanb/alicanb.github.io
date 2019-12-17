@@ -5,12 +5,20 @@
     <link>http://alicanb.github.io/authors/m.-gill/</link>
       <atom:link href="http://alicanb.github.io/authors/m.-gill/index.xml" rel="self" type="application/rss+xml" />
     <description>M. Gill</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Thu, 23 Aug 2018 00:00:00 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Tue, 17 Dec 2019 00:00:00 -0500</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/img/icon-192.png</url>
       <title>M. Gill</title>
       <link>http://alicanb.github.io/authors/m.-gill/</link>
     </image>
+    
+    <item>
+      <title>Utilizing Machine Learning for Image Quality Assessment for Reflectance Confocal Microscopy</title>
+      <link>http://alicanb.github.io/publication/jid-mednet/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/publication/jid-mednet/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</title>

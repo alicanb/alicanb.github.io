@@ -5,12 +5,20 @@
     <link>http://alicanb.github.io/publication_types/</link>
       <atom:link href="http://alicanb.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Mon, 11 Nov 2019 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Tue, 17 Dec 2019 00:00:00 -0500</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/img/icon-192.png</url>
       <title>Publication_types</title>
       <link>http://alicanb.github.io/publication_types/</link>
     </image>
+    
+    <item>
+      <title>2</title>
+      <link>http://alicanb.github.io/publication_types/2/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/publication_types/2/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>0</title>
@@ -33,14 +41,6 @@
       <link>http://alicanb.github.io/publication_types/1/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 -0400</pubDate>
       <guid>http://alicanb.github.io/publication_types/1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2</title>
-      <link>http://alicanb.github.io/publication_types/2/</link>
-      <pubDate>Fri, 12 Aug 2016 00:00:00 -0400</pubDate>
-      <guid>http://alicanb.github.io/publication_types/2/</guid>
       <description></description>
     </item>
     

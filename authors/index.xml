@@ -5,7 +5,7 @@
     <link>http://alicanb.github.io/authors/</link>
       <atom:link href="http://alicanb.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Mon, 11 Nov 2019 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Tue, 17 Dec 2019 00:00:00 -0500</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,10 +15,58 @@
     <item>
       <title></title>
       <link>http://alicanb.github.io/authors/admin/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
       <guid>http://alicanb.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I am a Ph.D. student under supervision of &lt;a href=&#34;http://www.ece.neu.edu/people/dy-jennifer&#34; target=&#34;_blank&#34;&gt;Jennifer Dy&lt;/a&gt;, &lt;a href=&#34;http://www.ece.neu.edu/people/brooks-dana&#34; target=&#34;_blank&#34;&gt;Dana Brooks&lt;/a&gt;, and &lt;a href=&#34;http://www.ccs.neu.edu/home/jwvdm/&#34; target=&#34;_blank&#34;&gt;Jan-Willem van de Meent&lt;/a&gt; at Northeastern University. My main research interests are machine learning with emphasis on probabilistic programming, deep neural networks, and their applications in biomedical image processing. I am one of the developers of &lt;a href=&#34;https://github.com/probtorch/probtorch&#34; target=&#34;_blank&#34;&gt;Probabilistic Torch&lt;/a&gt;, a library for deep generative models that extends PyTorch. I am also one of the maintainers of the Pytorch distributions module.&lt;/p&gt;
+      <description>&lt;p&gt;I am a Ph.D. student under supervision of &lt;a href=&#34;http://www.ece.neu.edu/people/dy-jennifer&#34;&gt;Jennifer Dy&lt;/a&gt;, &lt;a href=&#34;http://www.ece.neu.edu/people/brooks-dana&#34;&gt;Dana Brooks&lt;/a&gt;, and &lt;a href=&#34;http://www.ccs.neu.edu/home/jwvdm/&#34;&gt;Jan-Willem van de Meent&lt;/a&gt; at Northeastern University. My main research interests are machine learning with emphasis on probabilistic programming, deep neural networks, and their applications in biomedical image processing. I am one of the developers of &lt;a href=&#34;https://github.com/probtorch/probtorch&#34;&gt;Probabilistic Torch&lt;/a&gt;, a library for deep generative models that extends PyTorch. I am also one of the maintainers of the Pytorch distributions module.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>C. Alessi-Fox</title>
+      <link>http://alicanb.github.io/authors/c.-alessi-fox/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/c.-alessi-fox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D. H. Brooks</title>
+      <link>http://alicanb.github.io/authors/d.-h.-brooks/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/d.-h.-brooks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. G. Dy</title>
+      <link>http://alicanb.github.io/authors/j.-g.-dy/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/j.-g.-dy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K. Kose</title>
+      <link>http://alicanb.github.io/authors/k.-kose/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/k.-kose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Gill</title>
+      <link>http://alicanb.github.io/authors/m.-gill/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/m.-gill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Rajadhyaksha</title>
+      <link>http://alicanb.github.io/authors/m.-rajadhyaksha/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/m.-rajadhyaksha/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -30,42 +78,10 @@
     </item>
     
     <item>
-      <title>D. H. Brooks</title>
-      <link>http://alicanb.github.io/authors/d.-h.-brooks/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
-      <guid>http://alicanb.github.io/authors/d.-h.-brooks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>J. G. Dy</title>
-      <link>http://alicanb.github.io/authors/j.-g.-dy/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
-      <guid>http://alicanb.github.io/authors/j.-g.-dy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>J.W. van de Meent</title>
       <link>http://alicanb.github.io/authors/j.w.-van-de-meent/</link>
       <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
       <guid>http://alicanb.github.io/authors/j.w.-van-de-meent/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>K. Kose</title>
-      <link>http://alicanb.github.io/authors/k.-kose/</link>
-      <pubDate>Thu, 08 Aug 2019 00:00:00 -0400</pubDate>
-      <guid>http://alicanb.github.io/authors/k.-kose/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>M. Rajadhyaksha</title>
-      <link>http://alicanb.github.io/authors/m.-rajadhyaksha/</link>
-      <pubDate>Thu, 08 Aug 2019 00:00:00 -0400</pubDate>
-      <guid>http://alicanb.github.io/authors/m.-rajadhyaksha/</guid>
       <description></description>
     </item>
     
@@ -98,22 +114,6 @@
       <link>http://alicanb.github.io/authors/s.-jain/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 -0400</pubDate>
       <guid>http://alicanb.github.io/authors/s.-jain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C. Alessi-Fox</title>
-      <link>http://alicanb.github.io/authors/c.-alessi-fox/</link>
-      <pubDate>Thu, 23 Aug 2018 00:00:00 -0400</pubDate>
-      <guid>http://alicanb.github.io/authors/c.-alessi-fox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>M. Gill</title>
-      <link>http://alicanb.github.io/authors/m.-gill/</link>
-      <pubDate>Thu, 23 Aug 2018 00:00:00 -0400</pubDate>
-      <guid>http://alicanb.github.io/authors/m.-gill/</guid>
       <description></description>
     </item>
     
