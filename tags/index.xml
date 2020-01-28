@@ -5,18 +5,26 @@
     <link>http://alicanb.github.io/tags/</link>
       <atom:link href="http://alicanb.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Sun, 01 Nov 2015 00:00:00 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Alican Bozkurt</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 -0500</lastBuildDate>
     <image>
-      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <url>http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Tags</title>
       <link>http://alicanb.github.io/tags/</link>
     </image>
     
     <item>
-      <title>retinopathy of prematurity</title>
-      <link>http://alicanb.github.io/tags/retinopathy-of-prematurity/</link>
-      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
-      <guid>http://alicanb.github.io/tags/retinopathy-of-prematurity/</guid>
+      <title>RCM</title>
+      <link>http://alicanb.github.io/tags/rcm/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/tags/rcm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ROP</title>
+      <link>http://alicanb.github.io/tags/rop/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 -0400</pubDate>
+      <guid>http://alicanb.github.io/tags/rop/</guid>
       <description></description>
     </item>
     

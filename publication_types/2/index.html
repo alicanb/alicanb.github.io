@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -45,10 +45,16 @@
   
   
   
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -70,6 +76,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -100,13 +218,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -116,7 +236,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -135,11 +255,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="http://alicanb.github.io/publication_types/2/">
 
+  
   
   
   
@@ -156,8 +277,8 @@
   <meta property="og:site_name" content="Alican Bozkurt">
   <meta property="og:url" content="http://alicanb.github.io/publication_types/2/">
   <meta property="og:title" content="2 | Alican Bozkurt">
-  <meta property="og:description" content="PhD Student"><meta property="og:image" content="http://alicanb.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="http://alicanb.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="PhD Student"><meta property="og:image" content="http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2019-12-17T00:00:00-05:00">
   
@@ -215,6 +336,12 @@
 
 
   
+
+
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -419,59 +546,77 @@
 
   
   
-  <div>
-    <h2><a href="/publication/jid-mednet/">Utilizing Machine Learning for Image Quality Assessment for Reflectance Confocal Microscopy</a></h2>
-    <div class="article-style">
-      
-      In vivo reflectance confocal microscopy (RCM) enables clinicians to examine lesions’ morphological and cytological information in epidermal and dermal layers, while reducing the need for biopsies. As RCM is being adopted more widely, the workflow is …
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/jid-mednet/" >Utilizing Machine Learning for Image Quality Assessment for Reflectance Confocal Microscopy</a></h2>
+      <div class="article-style">
+        
+          In vivo reflectance confocal microscopy (RCM) enables clinicians to examine lesions’ morphological and cytological information in epidermal and dermal layers, while reducing the need for biopsies. As RCM is being adopted more widely, the workflow is …
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/srt-sc/">Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</a></h2>
-    <div class="article-style">
-      
-      Measuring the thickness of the stratum corneum (SC) in vivo is often required in pharmacological, dermatological, and cosmetological studies. Reflectance confocal microscopy (RCM) offers a non-invasive imaging-based approach. However, RCM-based …
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/srt-sc/" >Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</a></h2>
+      <div class="article-style">
+        
+          Measuring the thickness of the stratum corneum (SC) in vivo is often required in pharmacological, dermatological, and cosmetological studies. Reflectance confocal microscopy (RCM) offers a non-invasive imaging-based approach. However, RCM-based …
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/opthalmology-rop/">Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</a></h2>
-    <div class="article-style">
-      
-      *Importance: Published definitions of plus disease in retinopathy of prematurity (ROP) reference arterial tortuosity and venous dilation within the posterior pole based on a standard published photograph. One possible explanation for limited …
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/opthalmology-rop/" >Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</a></h2>
+      <div class="article-style">
+        
+          *Importance: Published definitions of plus disease in retinopathy of prematurity (ROP) reference arterial tortuosity and venous dilation within the posterior pole based on a standard published photograph. One possible explanation for limited …
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/tvst-rop/">Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</a></h2>
-    <div class="article-style">
-      
-      *Purpose: We developed and evaluated the performance of a novel computer-based image analysis system for grading plus disease in retinopathy of prematurity (ROP), and identified the image features, shapes, and sizes that best correlate with expert …
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/tvst-rop/" >Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</a></h2>
+      <div class="article-style">
+        
+          *Purpose: We developed and evaluated the performance of a novel computer-based image analysis system for grading plus disease in retinopathy of prematurity (ROP), and identified the image features, shapes, and sizes that best correlate with expert …
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/sivp-fonts/">Classifying fonts and calligraphy styles using complex wavelet transform</a></h2>
-    <div class="article-style">
-      
-      Recognizing fonts has become an important task in document analysis, due to the increasing number of available digital documents in different fonts and emphases. A generic font recognition system independent of language, script and content is …
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/sivp-fonts/" >Classifying fonts and calligraphy styles using complex wavelet transform</a></h2>
+      <div class="article-style">
+        
+          Recognizing fonts has become an important task in document analysis, due to the increasing number of available digital documents in different fonts and emphases. A generic font recognition system independent of language, script and content is …
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/sivp-fl/">Multi-scale directional-filtering-based method for follicular lymphoma grading</a></h2>
-    <div class="article-style">
-      
-      Follicular lymphoma (FL) is a group of malignancies of lymphocyte origin that arise from lymph nodes, spleen, and bone marrow in the lymphatic system. It is the second most common non-Hodgkins lymphoma. Characteristic of FL is the presence of …
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/sivp-fl/" >Multi-scale directional-filtering-based method for follicular lymphoma grading</a></h2>
+      <div class="article-style">
+        
+          Follicular lymphoma (FL) is a group of malignancies of lymphocyte origin that arise from lymph nodes, spleen, and bone marrow in the lymphatic system. It is the second most common non-Hodgkins lymphoma. Characteristic of FL is the presence of …
+        
+      </div>
     </div>
-  </div>
   
 
   
@@ -479,12 +624,6 @@
 </div>
 
       
-
-    
-    
-    
-    <script src="/js/mathjax-config.js"></script>
-    
 
     
     
@@ -504,10 +643,6 @@
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -582,7 +717,7 @@
     
     
     
-    <script src="/js/academic.min.600a2e440c16093e23e26e90951c4d4b.js"></script>
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
 
     
 
@@ -598,7 +733,7 @@
   
 
   <p class="powered-by">
-    © 2019 Alican Bozkurt &middot; 
+    © 2020 Alican Bozkurt &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

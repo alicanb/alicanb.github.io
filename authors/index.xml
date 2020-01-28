@@ -5,9 +5,9 @@
     <link>http://alicanb.github.io/authors/</link>
       <atom:link href="http://alicanb.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Tue, 17 Dec 2019 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Alican Bozkurt</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 -0500</lastBuildDate>
     <image>
-      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <url>http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Authors</title>
       <link>http://alicanb.github.io/authors/</link>
     </image>
@@ -15,10 +15,82 @@
     <item>
       <title></title>
       <link>http://alicanb.github.io/authors/admin/</link>
-      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
       <guid>http://alicanb.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I am a Ph.D. student under supervision of &lt;a href=&#34;http://www.ece.neu.edu/people/dy-jennifer&#34;&gt;Jennifer Dy&lt;/a&gt;, &lt;a href=&#34;http://www.ece.neu.edu/people/brooks-dana&#34;&gt;Dana Brooks&lt;/a&gt;, and &lt;a href=&#34;http://www.ccs.neu.edu/home/jwvdm/&#34;&gt;Jan-Willem van de Meent&lt;/a&gt; at Northeastern University. My main research interests are machine learning with emphasis on probabilistic programming, deep neural networks, and their applications in biomedical image processing. I am one of the developers of &lt;a href=&#34;https://github.com/probtorch/probtorch&#34;&gt;Probabilistic Torch&lt;/a&gt;, a library for deep generative models that extends PyTorch. I am also one of the maintainers of the Pytorch distributions module.&lt;/p&gt;
+      <description>&lt;p&gt;I am a Ph.D. student under supervision of 
+&lt;a href=&#34;http://www.ece.neu.edu/people/dy-jennifer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jennifer Dy&lt;/a&gt;
+, 
+&lt;a href=&#34;http://www.ece.neu.edu/people/brooks-dana&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dana Brooks&lt;/a&gt;
+, and 
+&lt;a href=&#34;http://www.ccs.neu.edu/home/jwvdm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jan-Willem van de Meent&lt;/a&gt;
+ at Northeastern University. My main research interests are machine learning with emphasis on probabilistic programming, deep neural networks, and their applications in biomedical image processing. I am one of the developers of 
+&lt;a href=&#34;https://github.com/probtorch/probtorch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Probabilistic Torch&lt;/a&gt;
+, a library for deep generative models that extends PyTorch. I am also one of the maintainers of the Pytorch distributions module.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Caterina Longo</title>
+      <link>http://alicanb.github.io/authors/caterina-longo/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/caterina-longo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Christi Alessi-Fox</title>
+      <link>http://alicanb.github.io/authors/christi-alessi-fox/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/christi-alessi-fox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dana H. Brooks</title>
+      <link>http://alicanb.github.io/authors/dana-h.-brooks/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/dana-h.-brooks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Giovanni Pellacani</title>
+      <link>http://alicanb.github.io/authors/giovanni-pellacani/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/giovanni-pellacani/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jennifer Dy</title>
+      <link>http://alicanb.github.io/authors/jennifer-dy/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/jennifer-dy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kivanc Kose</title>
+      <link>http://alicanb.github.io/authors/kivanc-kose/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/kivanc-kose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melissa Gill</title>
+      <link>http://alicanb.github.io/authors/melissa-gill/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/melissa-gill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Milind Rajadhyaksha</title>
+      <link>http://alicanb.github.io/authors/milind-rajadhyaksha/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/authors/milind-rajadhyaksha/</guid>
+      <description></description>
     </item>
     
     <item>

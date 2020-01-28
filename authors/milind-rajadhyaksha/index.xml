@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Milind Rajadhyaksha | Alican Bozkurt</title>
+    <link>http://alicanb.github.io/authors/milind-rajadhyaksha/</link>
+      <atom:link href="http://alicanb.github.io/authors/milind-rajadhyaksha/index.xml" rel="self" type="application/rss+xml" />
+    <description>Milind Rajadhyaksha</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Alican Bozkurt</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Milind Rajadhyaksha</title>
+      <link>http://alicanb.github.io/authors/milind-rajadhyaksha/</link>
+    </image>
+    
+    <item>
+      <title>Segmentation of Cellular Patterns in Confocal Images of Melanocytic Lesions in vivo via a Multiscale Encoder-Decoder Network (MED-Net)</title>
+      <link>http://alicanb.github.io/publication/arxiv-mednet/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/publication/arxiv-mednet/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

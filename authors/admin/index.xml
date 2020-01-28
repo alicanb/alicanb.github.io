@@ -5,12 +5,20 @@
     <link>http://alicanb.github.io/authors/admin/</link>
       <atom:link href="http://alicanb.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Alican Bozkurt</copyright><lastBuildDate>Tue, 17 Dec 2019 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Alican Bozkurt</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 -0500</lastBuildDate>
     <image>
-      <url>http://alicanb.github.io/img/icon-192.png</url>
+      <url>http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Alican Bozkurt</title>
       <link>http://alicanb.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Segmentation of Cellular Patterns in Confocal Images of Melanocytic Lesions in vivo via a Multiscale Encoder-Decoder Network (MED-Net)</title>
+      <link>http://alicanb.github.io/publication/arxiv-mednet/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      <guid>http://alicanb.github.io/publication/arxiv-mednet/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Utilizing Machine Learning for Image Quality Assessment for Reflectance Confocal Microscopy</title>

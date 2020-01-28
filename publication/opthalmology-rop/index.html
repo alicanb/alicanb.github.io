@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -45,10 +45,16 @@
   
   
   
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -70,6 +76,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -100,13 +218,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -116,7 +236,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -133,11 +253,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="http://alicanb.github.io/publication/opthalmology-rop/">
 
+  
   
   
   
@@ -154,8 +275,8 @@
   <meta property="og:site_name" content="Alican Bozkurt">
   <meta property="og:url" content="http://alicanb.github.io/publication/opthalmology-rop/">
   <meta property="og:title" content="Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis | Alican Bozkurt">
-  <meta property="og:description" content="*Importance: Published definitions of plus disease in retinopathy of prematurity (ROP) reference arterial tortuosity and venous dilation within the posterior pole based on a standard published photograph. One possible explanation for limited interexpert reliability for a diagnosis of plus disease is that experts deviate from the published definitions. *Objective: To identify vascular features used by experts for diagnosis of plus disease through quantitative image analysis. *Design, Setting, and Participants: A computer-based image analysis system (Imaging and Informatics in ROP [i-ROP]) was developed using a set of 77 digital fundus images, and the system was designed to classify images compared with a reference standard diagnosis (RSD). System performance was analyzed as a function of the field of view (circular crops with a radius of 1-6 disc diameters) and vessel subtype (arteries only, veins only, or all vessels). Routine ROP screening was conducted from June 29, 2011, to October 14, 2014, in neonatal intensive care units at 8 academic institutions, with a subset of 73 images independently classified by 11 ROP experts for validation. The RSD was compared with the majority diagnosis of experts. *Main Outcomes and Measures: The primary outcome measure was the percentage of accuracy of the i-ROP system classification of plus disease, with the RSD as a function of the field of view and vessel type. Secondary outcome measures included the accuracy of the 11 experts compared with the RSD. *Results: Accuracy of plus disease diagnosis by the i-ROP computer-based system was highest (95%; 95% CI, 94%-95%) when it incorporated vascular tortuosity from both arteries and veins and with the widest field of view (6–disc diameter radius). Accuracy was 90% or less when using only arterial tortuosity and 85% or less using a 2– to 3–disc diameter view similar to the standard published photograph. Diagnostic accuracy of the i-ROP system (95%) was comparable to that of 11 expert physicians (mean 87%, range 79%-99%). *Conclusions and Relevance: Experts in ROP appear to consider findings from beyond the posterior retina when diagnosing plus disease and consider tortuosity of both arteries and veins, in contrast with published definitions. It is feasible for a computer-based image analysis system to perform comparably with ROP experts, using manually segmented images."><meta property="og:image" content="http://alicanb.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="http://alicanb.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="*Importance: Published definitions of plus disease in retinopathy of prematurity (ROP) reference arterial tortuosity and venous dilation within the posterior pole based on a standard published photograph. One possible explanation for limited interexpert reliability for a diagnosis of plus disease is that experts deviate from the published definitions. *Objective: To identify vascular features used by experts for diagnosis of plus disease through quantitative image analysis. *Design, Setting, and Participants: A computer-based image analysis system (Imaging and Informatics in ROP [i-ROP]) was developed using a set of 77 digital fundus images, and the system was designed to classify images compared with a reference standard diagnosis (RSD). System performance was analyzed as a function of the field of view (circular crops with a radius of 1-6 disc diameters) and vessel subtype (arteries only, veins only, or all vessels). Routine ROP screening was conducted from June 29, 2011, to October 14, 2014, in neonatal intensive care units at 8 academic institutions, with a subset of 73 images independently classified by 11 ROP experts for validation. The RSD was compared with the majority diagnosis of experts. *Main Outcomes and Measures: The primary outcome measure was the percentage of accuracy of the i-ROP system classification of plus disease, with the RSD as a function of the field of view and vessel type. Secondary outcome measures included the accuracy of the 11 experts compared with the RSD. *Results: Accuracy of plus disease diagnosis by the i-ROP computer-based system was highest (95%; 95% CI, 94%-95%) when it incorporated vascular tortuosity from both arteries and veins and with the widest field of view (6–disc diameter radius). Accuracy was 90% or less when using only arterial tortuosity and 85% or less using a 2– to 3–disc diameter view similar to the standard published photograph. Diagnostic accuracy of the i-ROP system (95%) was comparable to that of 11 expert physicians (mean 87%, range 79%-99%). *Conclusions and Relevance: Experts in ROP appear to consider findings from beyond the posterior retina when diagnosing plus disease and consider tortuosity of both arteries and veins, in contrast with published definitions. It is feasible for a computer-based image analysis system to perform comparably with ROP experts, using manually segmented images."><meta property="og:image" content="http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2016-06-01T00:00:00-04:00">
@@ -201,7 +322,7 @@
     "name": "Alican Bozkurt",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://alicanb.github.io/img/icon-512.png"
+      "url": "img/http://alicanb.github.io/"
     }
   },
   "description": "*Importance: Published definitions of plus disease in retinopathy of prematurity (ROP) reference arterial tortuosity and venous dilation within the posterior pole based on a standard published photograph. One possible explanation for limited interexpert reliability for a diagnosis of plus disease is that experts deviate from the published definitions. *Objective: To identify vascular features used by experts for diagnosis of plus disease through quantitative image analysis. *Design, Setting, and Participants: A computer-based image analysis system (Imaging and Informatics in ROP [i-ROP]) was developed using a set of 77 digital fundus images, and the system was designed to classify images compared with a reference standard diagnosis (RSD). System performance was analyzed as a function of the field of view (circular crops with a radius of 1-6 disc diameters) and vessel subtype (arteries only, veins only, or all vessels). Routine ROP screening was conducted from June 29, 2011, to October 14, 2014, in neonatal intensive care units at 8 academic institutions, with a subset of 73 images independently classified by 11 ROP experts for validation. The RSD was compared with the majority diagnosis of experts. *Main Outcomes and Measures: The primary outcome measure was the percentage of accuracy of the i-ROP system classification of plus disease, with the RSD as a function of the field of view and vessel type. Secondary outcome measures included the accuracy of the 11 experts compared with the RSD. *Results: Accuracy of plus disease diagnosis by the i-ROP computer-based system was highest (95%; 95% CI, 94%-95%) when it incorporated vascular tortuosity from both arteries and veins and with the widest field of view (6–disc diameter radius). Accuracy was 90% or less when using only arterial tortuosity and 85% or less using a 2– to 3–disc diameter view similar to the standard published photograph. Diagnostic accuracy of the i-ROP system (95%) was comparable to that of 11 expert physicians (mean 87%, range 79%-99%). *Conclusions and Relevance: Experts in ROP appear to consider findings from beyond the posterior retina when diagnosing plus disease and consider tortuosity of both arteries and veins, in contrast with published definitions. It is feasible for a computer-based image analysis system to perform comparably with ROP experts, using manually segmented images."
@@ -261,6 +382,12 @@
 
 
   
+
+
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -618,6 +745,12 @@
 
 
 
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/rop/">ROP</a>
+  
+</div>
+
 
 
 <div class="share-box" aria-hidden="true">
@@ -736,6 +869,15 @@
 
   
   
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/tvst-rop/">Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</a></li>
+      
+    </ul>
+  </div>
+  
 
 
 
@@ -743,12 +885,6 @@
 </div>
 
       
-
-    
-    
-    
-    <script src="/js/mathjax-config.js"></script>
-    
 
     
     
@@ -768,10 +904,6 @@
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -846,7 +978,7 @@
     
     
     
-    <script src="/js/academic.min.600a2e440c16093e23e26e90951c4d4b.js"></script>
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
 
     
 
@@ -862,7 +994,7 @@
   
 
   <p class="powered-by">
-    © 2019 Alican Bozkurt &middot; 
+    © 2020 Alican Bozkurt &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
