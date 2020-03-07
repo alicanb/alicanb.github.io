@@ -18,14 +18,10 @@
       <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
       <guid>http://alicanb.github.io/authors/admin/</guid>
       <description>&lt;p&gt;I am a Ph.D. student under supervision of 
-&lt;a href=&#34;http://www.ece.neu.edu/people/dy-jennifer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jennifer Dy&lt;/a&gt;
-, 
-&lt;a href=&#34;http://www.ece.neu.edu/people/brooks-dana&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dana Brooks&lt;/a&gt;
-, and 
-&lt;a href=&#34;http://www.ccs.neu.edu/home/jwvdm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jan-Willem van de Meent&lt;/a&gt;
- at Northeastern University. My main research interests are machine learning with emphasis on probabilistic programming, deep neural networks, and their applications in biomedical image processing. I am one of the developers of 
-&lt;a href=&#34;https://github.com/probtorch/probtorch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Probabilistic Torch&lt;/a&gt;
-, a library for deep generative models that extends PyTorch. I am also one of the maintainers of the Pytorch distributions module.&lt;/p&gt;
+&lt;a href=&#34;http://www.ece.neu.edu/people/dy-jennifer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jennifer Dy&lt;/a&gt;, 
+&lt;a href=&#34;http://www.ece.neu.edu/people/brooks-dana&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dana Brooks&lt;/a&gt;, and 
+&lt;a href=&#34;http://www.ccs.neu.edu/home/jwvdm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jan-Willem van de Meent&lt;/a&gt; at Northeastern University. My main research interests are machine learning with emphasis on probabilistic programming, deep neural networks, and their applications in biomedical image processing. I am one of the developers of 
+&lt;a href=&#34;https://github.com/probtorch/probtorch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Probabilistic Torch&lt;/a&gt;, a library for deep generative models that extends PyTorch. I am also one of the maintainers of the Pytorch distributions module.&lt;/p&gt;
 </description>
     </item>
     
