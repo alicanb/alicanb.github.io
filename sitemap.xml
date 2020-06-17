@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://alicanb.github.io/author/</loc>
-    <lastmod>2020-01-01T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://alicanb.github.io/publication-type/0/</loc>
     <lastmod>2020-01-01T00:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://alicanb.github.io/</loc>
+    <lastmod>2020-01-01T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alicanb.github.io/author/alican-bozkurt/</loc>
     <lastmod>2020-01-01T00:00:00-05:00</lastmod>
   </url>
   
