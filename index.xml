@@ -5,7 +5,7 @@
     <link>http://alicanb.github.io/</link>
       <atom:link href="http://alicanb.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Alican Bozkurt</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Alican Bozkurt</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Alican Bozkurt</copyright><lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Alican Bozkurt</title>
@@ -13,33 +13,58 @@
     </image>
     
     <item>
+      <title>Rate-Regularization and Generalization in VAEs</title>
+      <link>http://alicanb.github.io/publication/aistats-ratereg/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://alicanb.github.io/publication/aistats-ratereg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Representation Learning for Complex Medical Images</title>
+      <link>http://alicanb.github.io/publication/phd_thesis/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://alicanb.github.io/publication/phd_thesis/</guid>
+      <description>&lt;!-- 
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+ 
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Segmentation of Cellular Patterns in Confocal Images of Melanocytic Lesions in vivo via a Multiscale Encoder-Decoder Network (MED-Net)</title>
-      <link>http://alicanb.github.io/publication/arxiv-mednet/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
-      <guid>http://alicanb.github.io/publication/arxiv-mednet/</guid>
+      <link>http://alicanb.github.io/publication/media-mednet/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://alicanb.github.io/publication/media-mednet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Utilizing Machine Learning for Image Quality Assessment for Reflectance Confocal Microscopy</title>
       <link>http://alicanb.github.io/publication/jid-mednet/</link>
-      <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/jid-mednet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Evaluating Combinatorial Generalization in Variational Autoencoders</title>
-      <link>http://alicanb.github.io/publication/arxiv-combgen/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
-      <guid>http://alicanb.github.io/publication/arxiv-combgen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Facilitating the Adoption of Reflectance Confocal Microscopy (RCM) in Clinical Cancer Care Practice with Machine Learning</title>
       <link>http://alicanb.github.io/publication/stanford-fac/</link>
-      <pubDate>Thu, 08 Aug 2019 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/stanford-fac/</guid>
       <description></description>
     </item>
@@ -47,7 +72,7 @@
     <item>
       <title>Structured Disentagled Representations</title>
       <link>http://alicanb.github.io/publication/aistats-hfvae/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/aistats-hfvae/</guid>
       <description></description>
     </item>
@@ -55,7 +80,7 @@
     <item>
       <title>Can VAEs generate novel examples?</title>
       <link>http://alicanb.github.io/publication/cract-vae/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/cract-vae/</guid>
       <description></description>
     </item>
@@ -63,7 +88,7 @@
     <item>
       <title>A Multiresolution Convolutional Neural Network with Partial Label Training for Annotating Reflectance Confocal Microscopy Images of Skin</title>
       <link>http://alicanb.github.io/publication/miccai-munet/</link>
-      <pubDate>Thu, 23 Aug 2018 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/miccai-munet/</guid>
       <description></description>
     </item>
@@ -71,7 +96,7 @@
     <item>
       <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
       <link>http://alicanb.github.io/publication/osa-munet/</link>
-      <pubDate>Fri, 06 Apr 2018 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/osa-munet/</guid>
       <description></description>
     </item>
@@ -79,7 +104,7 @@
     <item>
       <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images using Recurrent Convolutional Networks with Toeplitz Attention</title>
       <link>http://alicanb.github.io/publication/ml4h-dej/</link>
-      <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/ml4h-dej/</guid>
       <description></description>
     </item>
@@ -87,7 +112,7 @@
     <item>
       <title>Delineation of Skin Strata in Reflectance Confocal Microscopy Images With Recurrent Convolutional Networks</title>
       <link>http://alicanb.github.io/publication/cvmi-dej/</link>
-      <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/cvmi-dej/</guid>
       <description></description>
     </item>
@@ -95,7 +120,7 @@
     <item>
       <title>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</title>
       <link>http://alicanb.github.io/publication/spie-mosaic/</link>
-      <pubDate>Sat, 28 Jan 2017 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/spie-mosaic/</guid>
       <description></description>
     </item>
@@ -103,7 +128,7 @@
     <item>
       <title>Unsupervised delineation of stratum corneum using reflectance confocal microscopy and spectral clustering</title>
       <link>http://alicanb.github.io/publication/srt-sc/</link>
-      <pubDate>Fri, 12 Aug 2016 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 12 Aug 2016 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/srt-sc/</guid>
       <description></description>
     </item>
@@ -111,7 +136,7 @@
     <item>
       <title>Expert diagnosis of plus disease in retinopathy of prematurity from computer-based image analysis</title>
       <link>http://alicanb.github.io/publication/opthalmology-rop/</link>
-      <pubDate>Wed, 01 Jun 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/opthalmology-rop/</guid>
       <description></description>
     </item>
@@ -119,7 +144,7 @@
     <item>
       <title>Computer-Based Image Analysis for Plus Disease Diagnosis in Retinopathy of Prematurity: Performance of the “i-ROP” System and Image Features Associated With Expert Diagnosis</title>
       <link>http://alicanb.github.io/publication/tvst-rop/</link>
-      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/tvst-rop/</guid>
       <description></description>
     </item>
@@ -127,7 +152,7 @@
     <item>
       <title>Classifying fonts and calligraphy styles using complex wavelet transform</title>
       <link>http://alicanb.github.io/publication/sivp-fonts/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/sivp-fonts/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;fonts.png&#34; alt=&#34;Example classification of a document&#34; title=&#34;Example classification of a document&#34;&gt;&lt;/p&gt;
 </description>
@@ -136,7 +161,7 @@
     <item>
       <title>Multi-scale directional-filtering-based method for follicular lymphoma grading</title>
       <link>http://alicanb.github.io/publication/sivp-fl/</link>
-      <pubDate>Thu, 07 Aug 2014 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 07 Aug 2014 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/sivp-fl/</guid>
       <description></description>
     </item>
@@ -144,7 +169,7 @@
     <item>
       <title>Deconvolution using projections onto the epigraph set of a convex cost function</title>
       <link>http://alicanb.github.io/publication/siu-pocs-deconvolution/</link>
-      <pubDate>Thu, 12 Jun 2014 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/siu-pocs-deconvolution/</guid>
       <description></description>
     </item>
@@ -152,8 +177,16 @@
     <item>
       <title>Projections onto convex sets (POCS) based optimization by lifting</title>
       <link>http://alicanb.github.io/publication/globalsip-pocs/</link>
-      <pubDate>Thu, 13 Feb 2014 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
       <guid>http://alicanb.github.io/publication/globalsip-pocs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://alicanb.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://alicanb.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,1355 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.0.0-beta.3 for Hugo" />
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alican Bozkurt" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The performance of any task depends on the representation of the data. A good representation should capture the factors of variation relevant to the task at hand while discarding the nuisance variables. Since this is task-specific, the common way to build representations had been to hand-engineer them using domain knowledge. Since the advent of deep learning, this paradigm has shifted in favor of learning the representations in tandem with the task. Whereas there has been remarkable progress in representation learning with deep networks for natural images, medical images do not benefit from this paradigm as much as natural images. This is due to a number of factors particular to this domain, including relative data scarcity, class imbalance (e.g. many more “normal” images than abnormal or containing disease), and objects or patterns of interest occurring at multiple scales and without clear boundaries.  Another challenge for machine learning for medical images is that the tolerance for error is often lower compared to tasks involving natural images. As a result, representation learning for medical images still requires solutions that are tailored to the data and task at hand.
+
+In this thesis, we develop and study learning representations from complex medical data that enable high performance in several downstream tasks e.g., sequence classification and semantic segmentation. We then look at a more abstract deep learning methodology, generalization in Variational Autoencoders (VAEs), motivated by the limitations of current approaches, to improve our understanding of the relationship between available training data and representation of the more general population of images from which the training data were sampled.
+
+The medical imaging modality we look at is Reflectance Confocal Microscopy (RCM), which is an effective, non-invasive pre-screening tool for skin cancer diagnosis. However, RCM images require extensive training and experience to assess accurately. There are few quantitative tools available to standardize image acquisition and analysis, and the available ones are not interpretable. In the first part of this work, we use a RNN with attention on CNN features to delineate in an interpretable manner the skin strata in vertically-oriented stacks of transverse RCM image slices. We introduce a new attention mechanism called Toeplitz attention, which constrains the attention map to have a Toeplitz structure. Testing our model on an expert-labeled dataset of 504 RCM stacks, we achieve 88.07% image-wise classification accuracy, which is the current state of the art.
+
+In the second part of this work, we developed two automated semantic segmentation methods called MU-Net and MED-Net that provide pixel-wise labeling of RCM images into classes of cell structure patterns. The novelty in our approach is the modeling of textural patterns at multiple resolutions, mimicking the traditional procedure for examining pathology images, which routinely starts with low magnification (low resolution, large field of view) followed by closer inspection of suspicious areas with higher magnification (higher resolution, smaller fields of view). We trained and tested our model on non-overlapping partitions of 117 RCM mosaics of melanocytic lesions, an extensive dataset for this application, collected at four clinics in the US, and two in Italy. With patient-wise cross-validation, we achieved pixel-wise mean sensitivity and specificity of 70% and 95%, respectively, with a 0.71 Dice coefficient over six classes. In a second scenario, we partitioned the data by clinic or origin and tested the generalizability of the model across clinics. In this setting, we achieved pixel-wise mean sensitivity and specificity of 74% and 95%, respectively, with a 0.75 Dice coefficient. We compared MU-Net and MED-Net against the state-of-the-art semantic segmentation models and achieved better quantitative segmentation performance than previous approaches. Our results also suggest that, due to their nested multiscale architecture, our models annotated RCM mosaics more coherently, avoiding unrealistically fragmented annotations.
+
+Last, we examine the generalization of the latent representations in VAEs. The VAE objective combines a reconstruction loss (the distortion) and a KL divergence term (the rate) that is often interpreted as a regularizer. Our work re-examines this view. We perform rate-distortion analyses in which we control the strength of the KL term, the network capacity, and the difficulty of the generalization problem. Lowering the coefficient of the KL term lowers generalization in low capacity models, but paradoxically improves generalization in higher capacity models. Moreover, in easier generalization tasks (where the training set examples closely approximate test set examples), lowering the coefficient even improves generalization in low capacity models. These results show that the KL term does not improve generalization in terms of reconstruction loss. This suggests future work to investigate what inductive biases can aid generalization in this class of models." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://alicanb.github.io/publication/phd_thesis/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.f94d22adf54f28ebdd044668d194a594.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45449733-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-45449733-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="http://alicanb.github.io/publication/phd_thesis/" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@alicanb_" />
+    <meta property="twitter:creator" content="@alicanb_" />
+  
+  <meta property="og:site_name" content="Alican Bozkurt" />
+  <meta property="og:url" content="http://alicanb.github.io/publication/phd_thesis/" />
+  <meta property="og:title" content="Deep Representation Learning for Complex Medical Images | Alican Bozkurt" />
+  <meta property="og:description" content="The performance of any task depends on the representation of the data. A good representation should capture the factors of variation relevant to the task at hand while discarding the nuisance variables. Since this is task-specific, the common way to build representations had been to hand-engineer them using domain knowledge. Since the advent of deep learning, this paradigm has shifted in favor of learning the representations in tandem with the task. Whereas there has been remarkable progress in representation learning with deep networks for natural images, medical images do not benefit from this paradigm as much as natural images. This is due to a number of factors particular to this domain, including relative data scarcity, class imbalance (e.g. many more “normal” images than abnormal or containing disease), and objects or patterns of interest occurring at multiple scales and without clear boundaries.  Another challenge for machine learning for medical images is that the tolerance for error is often lower compared to tasks involving natural images. As a result, representation learning for medical images still requires solutions that are tailored to the data and task at hand.
+
+In this thesis, we develop and study learning representations from complex medical data that enable high performance in several downstream tasks e.g., sequence classification and semantic segmentation. We then look at a more abstract deep learning methodology, generalization in Variational Autoencoders (VAEs), motivated by the limitations of current approaches, to improve our understanding of the relationship between available training data and representation of the more general population of images from which the training data were sampled.
+
+The medical imaging modality we look at is Reflectance Confocal Microscopy (RCM), which is an effective, non-invasive pre-screening tool for skin cancer diagnosis. However, RCM images require extensive training and experience to assess accurately. There are few quantitative tools available to standardize image acquisition and analysis, and the available ones are not interpretable. In the first part of this work, we use a RNN with attention on CNN features to delineate in an interpretable manner the skin strata in vertically-oriented stacks of transverse RCM image slices. We introduce a new attention mechanism called Toeplitz attention, which constrains the attention map to have a Toeplitz structure. Testing our model on an expert-labeled dataset of 504 RCM stacks, we achieve 88.07% image-wise classification accuracy, which is the current state of the art.
+
+In the second part of this work, we developed two automated semantic segmentation methods called MU-Net and MED-Net that provide pixel-wise labeling of RCM images into classes of cell structure patterns. The novelty in our approach is the modeling of textural patterns at multiple resolutions, mimicking the traditional procedure for examining pathology images, which routinely starts with low magnification (low resolution, large field of view) followed by closer inspection of suspicious areas with higher magnification (higher resolution, smaller fields of view). We trained and tested our model on non-overlapping partitions of 117 RCM mosaics of melanocytic lesions, an extensive dataset for this application, collected at four clinics in the US, and two in Italy. With patient-wise cross-validation, we achieved pixel-wise mean sensitivity and specificity of 70% and 95%, respectively, with a 0.71 Dice coefficient over six classes. In a second scenario, we partitioned the data by clinic or origin and tested the generalizability of the model across clinics. In this setting, we achieved pixel-wise mean sensitivity and specificity of 74% and 95%, respectively, with a 0.75 Dice coefficient. We compared MU-Net and MED-Net against the state-of-the-art semantic segmentation models and achieved better quantitative segmentation performance than previous approaches. Our results also suggest that, due to their nested multiscale architecture, our models annotated RCM mosaics more coherently, avoiding unrealistically fragmented annotations.
+
+Last, we examine the generalization of the latent representations in VAEs. The VAE objective combines a reconstruction loss (the distortion) and a KL divergence term (the rate) that is often interpreted as a regularizer. Our work re-examines this view. We perform rate-distortion analyses in which we control the strength of the KL term, the network capacity, and the difficulty of the generalization problem. Lowering the coefficient of the KL term lowers generalization in low capacity models, but paradoxically improves generalization in higher capacity models. Moreover, in easier generalization tasks (where the training set examples closely approximate test set examples), lowering the coefficient even improves generalization in low capacity models. These results show that the KL term does not improve generalization in terms of reconstruction loss. This suggests future work to investigate what inductive biases can aid generalization in this class of models." /><meta property="og:image" content="http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-04-13T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-04-13T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://alicanb.github.io/publication/phd_thesis/"
+  },
+  "headline": "Deep Representation Learning for Complex Medical Images",
+  
+  "datePublished": "2020-04-13T00:00:00Z",
+  "dateModified": "2020-04-13T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Alican Bozkurt"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alican Bozkurt",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "The performance of any task depends on the representation of the data. A good representation should capture the factors of variation relevant to the task at hand while discarding the nuisance variables. Since this is task-specific, the common way to build representations had been to hand-engineer them using domain knowledge. Since the advent of deep learning, this paradigm has shifted in favor of learning the representations in tandem with the task. Whereas there has been remarkable progress in representation learning with deep networks for natural images, medical images do not benefit from this paradigm as much as natural images. This is due to a number of factors particular to this domain, including relative data scarcity, class imbalance (e.g. many more “normal” images than abnormal or containing disease), and objects or patterns of interest occurring at multiple scales and without clear boundaries.  Another challenge for machine learning for medical images is that the tolerance for error is often lower compared to tasks involving natural images. As a result, representation learning for medical images still requires solutions that are tailored to the data and task at hand.\n\nIn this thesis, we develop and study learning representations from complex medical data that enable high performance in several downstream tasks e.g., sequence classification and semantic segmentation. We then look at a more abstract deep learning methodology, generalization in Variational Autoencoders (VAEs), motivated by the limitations of current approaches, to improve our understanding of the relationship between available training data and representation of the more general population of images from which the training data were sampled.\n\nThe medical imaging modality we look at is Reflectance Confocal Microscopy (RCM), which is an effective, non-invasive pre-screening tool for skin cancer diagnosis. However, RCM images require extensive training and experience to assess accurately. There are few quantitative tools available to standardize image acquisition and analysis, and the available ones are not interpretable. In the first part of this work, we use a RNN with attention on CNN features to delineate in an interpretable manner the skin strata in vertically-oriented stacks of transverse RCM image slices. We introduce a new attention mechanism called Toeplitz attention, which constrains the attention map to have a Toeplitz structure. Testing our model on an expert-labeled dataset of 504 RCM stacks, we achieve 88.07% image-wise classification accuracy, which is the current state of the art.\n\nIn the second part of this work, we developed two automated semantic segmentation methods called MU-Net and MED-Net that provide pixel-wise labeling of RCM images into classes of cell structure patterns. The novelty in our approach is the modeling of textural patterns at multiple resolutions, mimicking the traditional procedure for examining pathology images, which routinely starts with low magnification (low resolution, large field of view) followed by closer inspection of suspicious areas with higher magnification (higher resolution, smaller fields of view). We trained and tested our model on non-overlapping partitions of 117 RCM mosaics of melanocytic lesions, an extensive dataset for this application, collected at four clinics in the US, and two in Italy. With patient-wise cross-validation, we achieved pixel-wise mean sensitivity and specificity of 70% and 95%, respectively, with a 0.71 Dice coefficient over six classes. In a second scenario, we partitioned the data by clinic or origin and tested the generalizability of the model across clinics. In this setting, we achieved pixel-wise mean sensitivity and specificity of 74% and 95%, respectively, with a 0.75 Dice coefficient. We compared MU-Net and MED-Net against the state-of-the-art semantic segmentation models and achieved better quantitative segmentation performance than previous approaches. Our results also suggest that, due to their nested multiscale architecture, our models annotated RCM mosaics more coherently, avoiding unrealistically fragmented annotations.\n\nLast, we examine the generalization of the latent representations in VAEs. The VAE objective combines a reconstruction loss (the distortion) and a KL divergence term (the rate) that is often interpreted as a regularizer. Our work re-examines this view. We perform rate-distortion analyses in which we control the strength of the KL term, the network capacity, and the difficulty of the generalization problem. Lowering the coefficient of the KL term lowers generalization in low capacity models, but paradoxically improves generalization in higher capacity models. Moreover, in easier generalization tasks (where the training set examples closely approximate test set examples), lowering the coefficient even improves generalization in low capacity models. These results show that the KL term does not improve generalization in terms of reconstruction loss. This suggests future work to investigate what inductive biases can aid generalization in this class of models."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Deep Representation Learning for Complex Medical Images | Alican Bozkurt</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8be00435174e2a694d14c4b53a403b4d.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Alican Bozkurt</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Alican Bozkurt</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://drive.google.com/open?id=0B9xKeFS4aancSXhOeElXV1dhZWM" target="_blank" rel="noopener"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Deep Representation Learning for Complex Medical Images</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Alican Bozkurt</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://drive.google.com/file/d/1dA7atgh6_jvU3SOOZkHSZzbCqQhCYWdD/view?usp=sharing" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/publication/phd_thesis/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://drive.google.com/file/d/13qKIHXmiZG2vTk3VEmaC2bgAEjOIuaSY/view?usp=sharing" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://search.proquest.com/openview/090e2163a36b083759928c078a09f3df/" target="_blank" rel="noopener">
+    
+    ProQuest
+  </a>
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract"><p>The performance of any task depends on the representation of the data. A good representation should capture the factors of variation relevant to the task at hand while discarding the nuisance variables. Since this is task-specific, the common way to build representations had been to hand-engineer them using domain knowledge. Since the advent of deep learning, this paradigm has shifted in favor of learning the representations in tandem with the task. Whereas there has been remarkable progress in representation learning with deep networks for natural images, medical images do not benefit from this paradigm as much as natural images. This is due to a number of factors particular to this domain, including relative data scarcity, class imbalance (e.g. many more “normal” images than abnormal or containing disease), and objects or patterns of interest occurring at multiple scales and without clear boundaries.  Another challenge for machine learning for medical images is that the tolerance for error is often lower compared to tasks involving natural images. As a result, representation learning for medical images still requires solutions that are tailored to the data and task at hand.</p>
+<p>In this thesis, we develop and study learning representations from complex medical data that enable high performance in several downstream tasks e.g., sequence classification and semantic segmentation. We then look at a more abstract deep learning methodology, generalization in Variational Autoencoders (VAEs), motivated by the limitations of current approaches, to improve our understanding of the relationship between available training data and representation of the more general population of images from which the training data were sampled.</p>
+<p>The medical imaging modality we look at is Reflectance Confocal Microscopy (RCM), which is an effective, non-invasive pre-screening tool for skin cancer diagnosis. However, RCM images require extensive training and experience to assess accurately. There are few quantitative tools available to standardize image acquisition and analysis, and the available ones are not interpretable. In the first part of this work, we use a RNN with attention on CNN features to delineate in an interpretable manner the skin strata in vertically-oriented stacks of transverse RCM image slices. We introduce a new attention mechanism called Toeplitz attention, which constrains the attention map to have a Toeplitz structure. Testing our model on an expert-labeled dataset of 504 RCM stacks, we achieve 88.07% image-wise classification accuracy, which is the current state of the art.</p>
+<p>In the second part of this work, we developed two automated semantic segmentation methods called MU-Net and MED-Net that provide pixel-wise labeling of RCM images into classes of cell structure patterns. The novelty in our approach is the modeling of textural patterns at multiple resolutions, mimicking the traditional procedure for examining pathology images, which routinely starts with low magnification (low resolution, large field of view) followed by closer inspection of suspicious areas with higher magnification (higher resolution, smaller fields of view). We trained and tested our model on non-overlapping partitions of 117 RCM mosaics of melanocytic lesions, an extensive dataset for this application, collected at four clinics in the US, and two in Italy. With patient-wise cross-validation, we achieved pixel-wise mean sensitivity and specificity of 70% and 95%, respectively, with a 0.71 Dice coefficient over six classes. In a second scenario, we partitioned the data by clinic or origin and tested the generalizability of the model across clinics. In this setting, we achieved pixel-wise mean sensitivity and specificity of 74% and 95%, respectively, with a 0.75 Dice coefficient. We compared MU-Net and MED-Net against the state-of-the-art semantic segmentation models and achieved better quantitative segmentation performance than previous approaches. Our results also suggest that, due to their nested multiscale architecture, our models annotated RCM mosaics more coherently, avoiding unrealistically fragmented annotations.</p>
+<p>Last, we examine the generalization of the latent representations in VAEs. The VAE objective combines a reconstruction loss (the distortion) and a KL divergence term (the rate) that is often interpreted as a regularizer. Our work re-examines this view. We perform rate-distortion analyses in which we control the strength of the KL term, the network capacity, and the difficulty of the generalization problem. Lowering the coefficient of the KL term lowers generalization in low capacity models, but paradoxically improves generalization in higher capacity models. Moreover, in easier generalization tasks (where the training set examples closely approximate test set examples), lowering the coefficient even improves generalization in low capacity models. These results show that the KL term does not improve generalization in terms of reconstruction loss. This suggests future work to investigate what inductive biases can aid generalization in this class of models.</p>
+</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#7">
+              Thesis
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">Ph.D. Thesis</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"><!-- 
+<div class="alert alert-note">
+  <div>
+    Click the <em>Cite</em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  </div>
+</div>
+
+
+<div class="alert alert-note">
+  <div>
+    Create your slides in Markdown - click the <em>Slides</em> button to check out the example.
+  </div>
+</div>
+ 
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+-->
+</div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/rcm/">RCM</a>
+  
+  <a class="badge badge-light" href="/tag/vae/">VAE</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://alicanb.github.io/publication/phd_thesis/&amp;text=Deep%20Representation%20Learning%20for%20Complex%20Medical%20Images" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://alicanb.github.io/publication/phd_thesis/&amp;t=Deep%20Representation%20Learning%20for%20Complex%20Medical%20Images" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Deep%20Representation%20Learning%20for%20Complex%20Medical%20Images&amp;body=http://alicanb.github.io/publication/phd_thesis/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://alicanb.github.io/publication/phd_thesis/&amp;title=Deep%20Representation%20Learning%20for%20Complex%20Medical%20Images" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Deep%20Representation%20Learning%20for%20Complex%20Medical%20Images%20http://alicanb.github.io/publication/phd_thesis/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://alicanb.github.io/publication/phd_thesis/&amp;title=Deep%20Representation%20Learning%20for%20Complex%20Medical%20Images" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://alicanb.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu72b8e2274b38f0c4adc28195c70219c7_19939_270x270_fill_q90_lanczos_center.jpg" alt="Alican Bozkurt"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://alicanb.github.io/">Alican Bozkurt</a></h5>
+      <h6 class="card-subtitle">AI Scientist</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:alican@ece.neu.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user:HadTR2kAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/alicanb" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://drive.google.com/open?id=0B9xKeFS4aancSXhOeElXV1dhZWM" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/aistats-ratereg/">Rate-Regularization and Generalization in VAEs</a></li>
+      
+      <li><a href="/publication/media-mednet/">Segmentation of Cellular Patterns in Confocal Images of Melanocytic Lesions in vivo via a Multiscale Encoder-Decoder Network (MED-Net)</a></li>
+      
+      <li><a href="/publication/jid-mednet/">Utilizing Machine Learning for Image Quality Assessment for Reflectance Confocal Microscopy</a></li>
+      
+      <li><a href="/publication/stanford-fac/">Facilitating the Adoption of Reflectance Confocal Microscopy (RCM) in Clinical Cancer Care Practice with Machine Learning</a></li>
+      
+      <li><a href="/publication/aistats-hfvae/">Structured Disentagled Representations</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2021 Alican Bozkurt
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    <script src="/js/_vendor/bootstrap.bundle.min.29d2abb07db775505d3a2efc824e7b29.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.982af1f55a074589bec34f6089331b4b.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

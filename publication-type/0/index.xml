@@ -5,7 +5,7 @@
     <link>http://alicanb.github.io/publication-type/0/</link>
       <atom:link href="http://alicanb.github.io/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
     <description>0</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Alican Bozkurt</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Alican Bozkurt</copyright><lastBuildDate>Thu, 08 Aug 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>0</title>
@@ -13,18 +13,26 @@
     </image>
     
     <item>
-      <title>Segmentation of Cellular Patterns in Confocal Images of Melanocytic Lesions in vivo via a Multiscale Encoder-Decoder Network (MED-Net)</title>
-      <link>http://alicanb.github.io/publication/arxiv-mednet/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
-      <guid>http://alicanb.github.io/publication/arxiv-mednet/</guid>
+      <title>Facilitating the Adoption of Reflectance Confocal Microscopy (RCM) in Clinical Cancer Care Practice with Machine Learning</title>
+      <link>http://alicanb.github.io/publication/stanford-fac/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://alicanb.github.io/publication/stanford-fac/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Evaluating Combinatorial Generalization in Variational Autoencoders</title>
-      <link>http://alicanb.github.io/publication/arxiv-combgen/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
-      <guid>http://alicanb.github.io/publication/arxiv-combgen/</guid>
+      <title>A Multiresolution Deep Learning Framework for Automated Annotation of Reflectance Confocal Microscopy Images</title>
+      <link>http://alicanb.github.io/publication/osa-munet/</link>
+      <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://alicanb.github.io/publication/osa-munet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep learning based classification of morphological patterns in reflectance confocal microscopy to guide noninvasive diagnosis of melanocytic lesions</title>
+      <link>http://alicanb.github.io/publication/spie-mosaic/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://alicanb.github.io/publication/spie-mosaic/</guid>
       <description></description>
     </item>
     
