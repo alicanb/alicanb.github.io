@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VAE | Alican Bozkurt</title>
-    <link>http://alicanb.github.io/tag/vae/</link>
-      <atom:link href="http://alicanb.github.io/tag/vae/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://alicanb.github.io/tag/vae/</link>
+      <atom:link href="https://alicanb.github.io/tag/vae/index.xml" rel="self" type="application/rss+xml" />
     <description>VAE</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Alican Bozkurt</copyright><lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>VAE</title>
-      <link>http://alicanb.github.io/tag/vae/</link>
+      <link>https://alicanb.github.io/tag/vae/</link>
     </image>
     
     <item>
       <title>Rate-Regularization and Generalization in VAEs</title>
-      <link>http://alicanb.github.io/publication/aistats-ratereg/</link>
+      <link>https://alicanb.github.io/publication/aistats-ratereg/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://alicanb.github.io/publication/aistats-ratereg/</guid>
+      <guid>https://alicanb.github.io/publication/aistats-ratereg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Representation Learning for Complex Medical Images</title>
-      <link>http://alicanb.github.io/publication/phd_thesis/</link>
+      <link>https://alicanb.github.io/publication/phd_thesis/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://alicanb.github.io/publication/phd_thesis/</guid>
+      <guid>https://alicanb.github.io/publication/phd_thesis/</guid>
       <description>&lt;!-- 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -47,17 +47,17 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Structured Disentagled Representations</title>
-      <link>http://alicanb.github.io/publication/aistats-hfvae/</link>
+      <link>https://alicanb.github.io/publication/aistats-hfvae/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://alicanb.github.io/publication/aistats-hfvae/</guid>
+      <guid>https://alicanb.github.io/publication/aistats-hfvae/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Can VAEs generate novel examples?</title>
-      <link>http://alicanb.github.io/publication/cract-vae/</link>
+      <link>https://alicanb.github.io/publication/cract-vae/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://alicanb.github.io/publication/cract-vae/</guid>
+      <guid>https://alicanb.github.io/publication/cract-vae/</guid>
       <description></description>
     </item>
     
