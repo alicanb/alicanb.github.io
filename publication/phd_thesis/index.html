@@ -72,9 +72,6 @@ Last, we examine the generalization of the latent representations in VAEs. The V
 
   
   
-    
-    <script src="/js/mathjax-config.js"></script>
-  
 
   
   
@@ -209,8 +206,6 @@ Last, we examine the generalization of the latent representations in VAEs. The V
       
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
-      
     
       
       
@@ -225,17 +220,9 @@ Last, we examine the generalization of the latent representations in VAEs. The V
 
       
       
-
-      
-    
-      
+        
       
 
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -271,7 +258,7 @@ Last, we examine the generalization of the latent representations in VAEs. The V
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.8273eccd28c1636b83cf05c867df0939.css" />
+  <link rel="stylesheet" href="/css/wowchemy.003d2be57501b5669ca58ef75468ece2.css" />
 
   
 
@@ -320,6 +307,10 @@ Last, we examine the generalization of the latent representations in VAEs. The V
 
   
 
+  
+
+
+
 
   
   
@@ -331,11 +322,12 @@ Last, we examine the generalization of the latent representations in VAEs. The V
     <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
 
   <link rel="canonical" href="https://alicanb.github.io/publication/phd_thesis/" />
 
+  
   
   
   
@@ -349,12 +341,9 @@ Last, we examine the generalization of the latent representations in VAEs. The V
   
   <meta property="twitter:card" content="summary" />
   
-    <meta property="twitter:site" content="@alicanb_" />
-    <meta property="twitter:creator" content="@alicanb_" />
-  
-  <meta property="og:site_name" content="Alican Bozkurt" />
+  <meta property="og:site_name" content="Academic" />
   <meta property="og:url" content="https://alicanb.github.io/publication/phd_thesis/" />
-  <meta property="og:title" content="Deep Representation Learning for Complex Medical Images | Alican Bozkurt" />
+  <meta property="og:title" content="Deep Representation Learning for Complex Medical Images | Academic" />
   <meta property="og:description" content="The performance of any task depends on the representation of the data. A good representation should capture the factors of variation relevant to the task at hand while discarding the nuisance variables. Since this is task-specific, the common way to build representations had been to hand-engineer them using domain knowledge. Since the advent of deep learning, this paradigm has shifted in favor of learning the representations in tandem with the task. Whereas there has been remarkable progress in representation learning with deep networks for natural images, medical images do not benefit from this paradigm as much as natural images. This is due to a number of factors particular to this domain, including relative data scarcity, class imbalance (e.g. many more “normal” images than abnormal or containing disease), and objects or patterns of interest occurring at multiple scales and without clear boundaries.  Another challenge for machine learning for medical images is that the tolerance for error is often lower compared to tasks involving natural images. As a result, representation learning for medical images still requires solutions that are tailored to the data and task at hand.
 
 In this thesis, we develop and study learning representations from complex medical data that enable high performance in several downstream tasks e.g., sequence classification and semantic segmentation. We then look at a more abstract deep learning methodology, generalization in Variational Autoencoders (VAEs), motivated by the limitations of current approaches, to improve our understanding of the relationship between available training data and representation of the more general population of images from which the training data were sampled.
@@ -363,8 +352,8 @@ The medical imaging modality we look at is Reflectance Confocal Microscopy (RCM)
 
 In the second part of this work, we developed two automated semantic segmentation methods called MU-Net and MED-Net that provide pixel-wise labeling of RCM images into classes of cell structure patterns. The novelty in our approach is the modeling of textural patterns at multiple resolutions, mimicking the traditional procedure for examining pathology images, which routinely starts with low magnification (low resolution, large field of view) followed by closer inspection of suspicious areas with higher magnification (higher resolution, smaller fields of view). We trained and tested our model on non-overlapping partitions of 117 RCM mosaics of melanocytic lesions, an extensive dataset for this application, collected at four clinics in the US, and two in Italy. With patient-wise cross-validation, we achieved pixel-wise mean sensitivity and specificity of 70% and 95%, respectively, with a 0.71 Dice coefficient over six classes. In a second scenario, we partitioned the data by clinic or origin and tested the generalizability of the model across clinics. In this setting, we achieved pixel-wise mean sensitivity and specificity of 74% and 95%, respectively, with a 0.75 Dice coefficient. We compared MU-Net and MED-Net against the state-of-the-art semantic segmentation models and achieved better quantitative segmentation performance than previous approaches. Our results also suggest that, due to their nested multiscale architecture, our models annotated RCM mosaics more coherently, avoiding unrealistically fragmented annotations.
 
-Last, we examine the generalization of the latent representations in VAEs. The VAE objective combines a reconstruction loss (the distortion) and a KL divergence term (the rate) that is often interpreted as a regularizer. Our work re-examines this view. We perform rate-distortion analyses in which we control the strength of the KL term, the network capacity, and the difficulty of the generalization problem. Lowering the coefficient of the KL term lowers generalization in low capacity models, but paradoxically improves generalization in higher capacity models. Moreover, in easier generalization tasks (where the training set examples closely approximate test set examples), lowering the coefficient even improves generalization in low capacity models. These results show that the KL term does not improve generalization in terms of reconstruction loss. This suggests future work to investigate what inductive biases can aid generalization in this class of models." /><meta property="og:image" content="https://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
-    <meta property="twitter:image" content="https://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+Last, we examine the generalization of the latent representations in VAEs. The VAE objective combines a reconstruction loss (the distortion) and a KL divergence term (the rate) that is often interpreted as a regularizer. Our work re-examines this view. We perform rate-distortion analyses in which we control the strength of the KL term, the network capacity, and the difficulty of the generalization problem. Lowering the coefficient of the KL term lowers generalization in low capacity models, but paradoxically improves generalization in higher capacity models. Moreover, in easier generalization tasks (where the training set examples closely approximate test set examples), lowering the coefficient even improves generalization in low capacity models. These results show that the KL term does not improve generalization in terms of reconstruction loss. This suggests future work to investigate what inductive biases can aid generalization in this class of models." /><meta property="og:image" content="https://alicanb.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://alicanb.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -408,10 +397,10 @@ Last, we examine the generalization of the latent representations in VAEs. The V
   
   "publisher": {
     "@type": "Organization",
-    "name": "Alican Bozkurt",
+    "name": "Academic",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://alicanb.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "https://alicanb.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "The performance of any task depends on the representation of the data. A good representation should capture the factors of variation relevant to the task at hand while discarding the nuisance variables. Since this is task-specific, the common way to build representations had been to hand-engineer them using domain knowledge. Since the advent of deep learning, this paradigm has shifted in favor of learning the representations in tandem with the task. Whereas there has been remarkable progress in representation learning with deep networks for natural images, medical images do not benefit from this paradigm as much as natural images. This is due to a number of factors particular to this domain, including relative data scarcity, class imbalance (e.g. many more “normal” images than abnormal or containing disease), and objects or patterns of interest occurring at multiple scales and without clear boundaries.  Another challenge for machine learning for medical images is that the tolerance for error is often lower compared to tasks involving natural images. As a result, representation learning for medical images still requires solutions that are tailored to the data and task at hand.\n\nIn this thesis, we develop and study learning representations from complex medical data that enable high performance in several downstream tasks e.g., sequence classification and semantic segmentation. We then look at a more abstract deep learning methodology, generalization in Variational Autoencoders (VAEs), motivated by the limitations of current approaches, to improve our understanding of the relationship between available training data and representation of the more general population of images from which the training data were sampled.\n\nThe medical imaging modality we look at is Reflectance Confocal Microscopy (RCM), which is an effective, non-invasive pre-screening tool for skin cancer diagnosis. However, RCM images require extensive training and experience to assess accurately. There are few quantitative tools available to standardize image acquisition and analysis, and the available ones are not interpretable. In the first part of this work, we use a RNN with attention on CNN features to delineate in an interpretable manner the skin strata in vertically-oriented stacks of transverse RCM image slices. We introduce a new attention mechanism called Toeplitz attention, which constrains the attention map to have a Toeplitz structure. Testing our model on an expert-labeled dataset of 504 RCM stacks, we achieve 88.07% image-wise classification accuracy, which is the current state of the art.\n\nIn the second part of this work, we developed two automated semantic segmentation methods called MU-Net and MED-Net that provide pixel-wise labeling of RCM images into classes of cell structure patterns. The novelty in our approach is the modeling of textural patterns at multiple resolutions, mimicking the traditional procedure for examining pathology images, which routinely starts with low magnification (low resolution, large field of view) followed by closer inspection of suspicious areas with higher magnification (higher resolution, smaller fields of view). We trained and tested our model on non-overlapping partitions of 117 RCM mosaics of melanocytic lesions, an extensive dataset for this application, collected at four clinics in the US, and two in Italy. With patient-wise cross-validation, we achieved pixel-wise mean sensitivity and specificity of 70% and 95%, respectively, with a 0.71 Dice coefficient over six classes. In a second scenario, we partitioned the data by clinic or origin and tested the generalizability of the model across clinics. In this setting, we achieved pixel-wise mean sensitivity and specificity of 74% and 95%, respectively, with a 0.75 Dice coefficient. We compared MU-Net and MED-Net against the state-of-the-art semantic segmentation models and achieved better quantitative segmentation performance than previous approaches. Our results also suggest that, due to their nested multiscale architecture, our models annotated RCM mosaics more coherently, avoiding unrealistically fragmented annotations.\n\nLast, we examine the generalization of the latent representations in VAEs. The VAE objective combines a reconstruction loss (the distortion) and a KL divergence term (the rate) that is often interpreted as a regularizer. Our work re-examines this view. We perform rate-distortion analyses in which we control the strength of the KL term, the network capacity, and the difficulty of the generalization problem. Lowering the coefficient of the KL term lowers generalization in low capacity models, but paradoxically improves generalization in higher capacity models. Moreover, in easier generalization tasks (where the training set examples closely approximate test set examples), lowering the coefficient even improves generalization in low capacity models. These results show that the KL term does not improve generalization in terms of reconstruction loss. This suggests future work to investigate what inductive biases can aid generalization in this class of models."
@@ -430,11 +419,11 @@ Last, we examine the generalization of the latent representations in VAEs. The V
 
 
 
-  <title>Deep Representation Learning for Complex Medical Images | Alican Bozkurt</title>
+  <title>Deep Representation Learning for Complex Medical Images | Academic</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="422b01dbe09bdfe1673aa0f5029d9baa" >
 
   
   
@@ -507,7 +496,7 @@ Last, we examine the generalization of the latent representations in VAEs. The V
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Alican Bozkurt</a>
+      <a class="navbar-brand" href="/">Academic</a>
     </div>
     
 
@@ -520,7 +509,7 @@ Last, we examine the generalization of the latent representations in VAEs. The V
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Alican Bozkurt</a>
+      <a class="navbar-brand" href="/">Academic</a>
     </div>
     
 
@@ -649,8 +638,6 @@ Last, we examine the generalization of the latent representations in VAEs. The V
         
         
           
-            
-          
         
 
         
@@ -669,7 +656,7 @@ Last, we examine the generalization of the latent representations in VAEs. The V
         
 
         <li class="nav-item">
-          <a class="nav-link " href="https://drive.google.com/open?id=0B9xKeFS4aancSXhOeElXV1dhZWM" target="_blank" rel="noopener"><span>CV</span></a>
+          <a class="nav-link " href="/%22https:/drive.google.com/open?id=0B9xKeFS4aancSXhOeElXV1dhZWM"><span>CV</span></a>
         </li>
 
         
@@ -1077,7 +1064,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
   <div class="media author-card content-widget-hr">
     
       
-      <a href="https://alicanb.github.io/"><img class="avatar mr-3 avatar-circle" src="/author/alican-bozkurt/avatar_hu72b8e2274b38f0c4adc28195c70219c7_19939_270x270_fill_q75_lanczos_center.jpg" alt="Alican Bozkurt"></a>
+      <a href="https://alicanb.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu72b8e2274b38f0c4adc28195c70219c7_19939_270x270_fill_q75_lanczos_center.jpg" alt="Alican Bozkurt"></a>
     
 
     <div class="media-body">
@@ -1220,10 +1207,13 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     
     
-    Published with
-    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
-    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
-    open source</a> website builder that empowers creators.
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1285,7 +1275,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/.min.js"></script>
         
       
 
